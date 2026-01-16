@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+build/
+*.css.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+dist.zip
+dist.zip

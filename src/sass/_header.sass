@@ -1,0 +1,53 @@
+@use 'variables' as *
+
+.header
+  border-bottom: 1px solid $accent-color
+  a
+    color: $secondary-color 
+  nav
+    background: $primary-color
+  &__logo
+    width: 50px
+    @media (max-width: 500px)
+      width: 40px
+
+  span
+      font-family: $family-base
+      letter-spacing: 1.5px
+      font-size: 20px
+
+      @media (max-width: 500px)
+        font-size: 16px
+
+      @media (max-width: 500px)
+        display: none
+
+  &__input
+    border: 1px solid $accent-color
+    border-radius: 0
+    border-right: none
+    
+    &:focus
+      border-color: $accent-color
+      box-shadow: 0 0 0 .15rem $accent-color-opacity-3
+      
+
+    
+
+  &__error
+    bottom: -21px
+  &__button
+    color: $accent-color
+    font-weight: 600
+    border: 1px solid $accent-color
+    border-radius: 0
+
+    &:hover
+      color: $accent-color-opacity-3
+
+    &:active
+      outline: none
+      box-shadow: none
+    &:focus
+      outline: none
+      box-shadow: none
