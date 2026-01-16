@@ -1,11 +1,17 @@
 @use 'variables' as *
 
 .header
-  border-bottom: 1px solid $accent-color
+  
   a
     color: $secondary-color 
   nav
     background: $primary-color
+    border-bottom: 1px solid $accent-color
+
+  &__link--active
+    font-weight: bold
+    text-decoration: underline
+
   &__logo
     width: 50px
     @media (max-width: 500px)
@@ -22,20 +28,12 @@
       @media (max-width: 500px)
         display: none
 
-  &__input
-    border: 1px solid $accent-color
-    border-radius: 0
-    border-right: none
-    
-    &:focus
-      border-color: $accent-color
-      box-shadow: 0 0 0 .15rem $accent-color-opacity-3
-      
+  &__tel
+    text-decoration: none
+    font-weight: 600
+    font-size: 18px
+    letter-spacing: 2px
 
-    
-
-  &__error
-    bottom: -21px
   &__button
     color: $accent-color
     font-weight: 600

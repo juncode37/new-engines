@@ -19,6 +19,6 @@
       })();
 
 // vin transform
-document.querySelector('.header__input').addEventListener('input', function(e) {
-  e.target.value = e.target.value.toUpperCase();
-});
+// document.querySelector('.header__input').addEventListener('input', function(e) {
+//   e.target.value = e.target.value.toUpperCase();
+// });

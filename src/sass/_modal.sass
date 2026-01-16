@@ -1,0 +1,17 @@
+@use 'variables' as *
+
+.vin-modal
+  .modal-content
+    background: $border-color
+
+  &__input
+    border: 1px solid $accent-color
+    border-radius: 0
+    background: $text-secondary
+
+    &:focus
+      border-color: $accent-color
+      box-shadow: 0 0 0 .15rem $accent-color-opacity-3
+
+    &__error
+      bottom: -21px
