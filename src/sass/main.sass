@@ -19,7 +19,31 @@ body
   font-family: $family-base
   color: $secondary-color
 
+  h2
+    color: $primary-color
+    font-weight: 600
+    margin-bottom: 1em
+  h4
+    text-align: center
+
   .success-custom
     color: $success-color
 
+  .was-validated .form-control:invalid
+    border: 2px solid $error-color
 
+  .form-control.is-valid, .was-validated .form-control:valid
+    border: 2px solid $success-color
+
+  .call-trigger
+    background: transparent
+    border: none
+    padding: 0
+    cursor: pointer
+
+    svg
+      animation: fa-shake 1s infinite linear
+      width: 48px
+      height: 48px
+      background: transparrent
+      color: $success-color

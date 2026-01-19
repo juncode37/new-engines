@@ -1,11 +1,6 @@
 @use 'variables' as *
 
 .header
-  .was-validated .form-control:invalid
-    border: 2px solid $error-color
-
-  .form-control.is-valid, .was-validated .form-control:valid
-    border: 2px solid $success-color
 
   a
     color: $secondary-color
@@ -52,6 +47,9 @@
   &__error
       left: 0
       top: -24px
+      font-weight: 600
+      text-align: left
+      color: $error-color
       
 
   &__button
@@ -59,9 +57,11 @@
     font-weight: 600
     border: 1px solid $accent-color
     border-radius: 0
+    transition: 0.7s
 
     &:hover
-      color: $accent-color-opacity-3
+      background: $accent-color
+      color: $primary-color
 
     &:active
       outline: none
