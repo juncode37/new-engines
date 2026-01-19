@@ -1,9 +1,14 @@
 @use 'variables' as *
 
 .header
-  
+  .was-validated .form-control:invalid
+    border: 2px solid $error-color
+
+  .form-control.is-valid, .was-validated .form-control:valid
+    border: 2px solid $success-color
+
   a
-    color: $secondary-color 
+    color: $secondary-color
   nav
     background: $primary-color
     border-bottom: 1px solid $accent-color
@@ -18,12 +23,12 @@
       width: 40px
 
   span
-      font-family: $family-base
-      letter-spacing: 1.5px
-      font-size: 20px
+    font-family: $family-base
+    letter-spacing: 1.5px
+    font-size: 20px
 
-      @media (max-width: 500px)
-        font-size: 16px
+    @media (max-width: 500px)
+      font-size: 16px
 
       @media (max-width: 500px)
         display: none
@@ -33,6 +38,21 @@
     font-weight: 600
     font-size: 18px
     letter-spacing: 2px
+
+  &__input
+    border: 1px solid $accent-color
+    border-radius: 0
+    border-right: 0
+    width: 210px
+
+    &:focus
+      border-color: $accent-color
+      box-shadow: 0 0 0 .15rem $accent-color-opacity-3
+
+  &__error
+      left: 0
+      top: -24px
+      
 
   &__button
     color: $accent-color
@@ -49,3 +69,18 @@
     &:focus
       outline: none
       box-shadow: none
+
+  &__offcanvas
+    background: $tertiary-color
+    color: $secondary-color
+    font-size: 18px 
+    font-weight: 600
+
+    input
+      border-right: 1px solid $accent-color
+      margin-bottom: 1.5rem
+      width: 210px
+
+    button[type="submit"]
+      width: 210px
+      text-align: center

@@ -1,17 +1,24 @@
 @use 'variables' as *
 
 .vin-modal
-  .modal-content
-    background: $border-color
+  &__contnent
+    background: $tertiary-color
+  
+  &__btn
+    width: 50px
+    height: 50px
+    border-radius: 8px
+    transition: .3s
+    cursor: pointer
 
-  &__input
-    border: 1px solid $accent-color
-    border-radius: 0
-    background: $text-secondary
+    &:hover
+      transform: scale(1.2)
 
-    &:focus
-      border-color: $accent-color
-      box-shadow: 0 0 0 .15rem $accent-color-opacity-3
+  &__btn--telegram
+    background: url(../icon/telegram_ico.webp) no-repeat center/cover
+  &__btn--whatsup
+    background: url(../icon/whatsup_ico.png) no-repeat center/cover
+  &__btn--max
+    background: url(../icon/max_ico.png) no-repeat center/cover
 
-    &__error
-      bottom: -21px
+  
