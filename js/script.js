@@ -202,7 +202,7 @@ reviews.forEach((element) => {
      <article class="slider__item p-3">
       <div class="d-flex slider__header mb-3">
         <div class="slider__ico me-3">
-          <img src="../icon/user_ico.png" alt="${element.name}" />
+          <img src="./icon/user_ico.png" alt="${element.name}" />
         </div>
         <div class="overflow-hidden">
           <div class="slider__descr text-left">
