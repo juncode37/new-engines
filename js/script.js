@@ -1,9 +1,7 @@
 // vin transform
-document
-  .querySelector(".header__input")
-  .addEventListener("input", function (e) {
-    e.target.value = e.target.value.toUpperCase();
-  });
+document.querySelector(".hero__input").addEventListener("input", function (e) {
+  e.target.value = e.target.value.toUpperCase();
+});
 // vin transform end
 
 // form validation
@@ -57,12 +55,40 @@ modalElement.addEventListener("hidden.bs.modal", function () {
 
 // Call trigger button
 const callTrigger = document.querySelector(".call-trigger");
+
 if (callTrigger) {
   callTrigger.addEventListener("click", () => {
     const modal = new bootstrap.Modal("#sendVin");
     modal.show();
   });
 }
+function CallTriggerMove() {
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop  > window.innerHeight / 5 ) {
+      callTrigger.classList.remove("call-trigger-center");
+      callTrigger.classList.add("call-trigger-bottom");
+    } else {
+      callTrigger.classList.remove("call-trigger-bottom");
+      callTrigger.classList.add("call-trigger-center");
+    }
+    console.log(scrollTop, window.innerHeight);
+  });
+}
+
+function callTriggerPosition() {
+  if (window.innerWidth < 700) {
+    callTrigger.classList.remove("call-trigger-bottom");
+    callTrigger.classList.add("call-trigger-center");
+    CallTriggerMove();
+  } else {
+    callTrigger.classList.remove("call-trigger-center");
+    callTrigger.classList.add("call-trigger-bottom");
+  }
+}
+
+callTriggerPosition();
+
 // Call trigger end
 
 // send messages
@@ -104,7 +130,7 @@ function sendToMessenger(messenger, vin) {
   }
 }
 
-const messengerButtons = document.querySelectorAll(".vin-modal__btn");
+const messengerButtons = document.querySelectorAll(".messenger-btn");
 messengerButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const messenger = btn.dataset.messenger;
