@@ -43,3 +43,39 @@
     border: 1px solid $accent-color
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5)
     padding: 20px
+
+  &__input
+    border: 1px solid $accent-color
+    border-radius: 0
+    border-right: 0
+    width: 210px
+
+    &:focus
+      border-color: $accent-color
+      box-shadow: 0 0 0 .15rem $accent-color-opacity-3
+
+  &__error
+      left: 0
+      top: -24px
+      font-weight: 600
+      text-align: left
+      color: $error-color
+      
+
+  &__button
+    color: $accent-color
+    font-weight: 600
+    border: 1px solid $accent-color
+    border-radius: 0
+    transition: 0.7s
+
+    &:hover
+      background: $accent-color
+      color: $primary-color
+
+    &:active
+      outline: none
+      box-shadow: none
+    &:focus
+      outline: none
+      box-shadow: none

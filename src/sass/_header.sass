@@ -34,53 +34,33 @@
     font-size: 18px
     letter-spacing: 2px
 
-  &__input
+  &__btn
+    // font-size: calc(0.8em + 0.5vw)
+    width: 40px
+    height: 40px
     border: 1px solid $accent-color
-    border-radius: 0
-    border-right: 0
-    width: 210px
-
-    &:focus
-      border-color: $accent-color
-      box-shadow: 0 0 0 .15rem $accent-color-opacity-3
-
-  &__error
-      left: 0
-      top: -24px
-      font-weight: 600
-      text-align: left
-      color: $error-color
-      
-
-  &__button
-    color: $accent-color
-    font-weight: 600
-    border: 1px solid $accent-color
-    border-radius: 0
-    transition: 0.7s
+    transition: .3s
+    
+    cursor: pointer
 
     &:hover
-      background: $accent-color
-      color: $primary-color
+      transform: scale(1.2)
 
-    &:active
-      outline: none
-      box-shadow: none
-    &:focus
-      outline: none
-      box-shadow: none
+  &__btn--telegram
+    background: url(../icon/telegram_ico_orange.png) no-repeat 4px/80%
+  &__btn--whatsup
+    background: url(../icon/whatsapp_ico_orange.png) no-repeat 4px/80%
+  &__btn--max
+    background: url(../icon/max_ico_orange.png) no-repeat 4px/80%
 
   &__offcanvas
     background: $tertiary-color
     color: $secondary-color
-    font-size: 18px 
+    font-size: 18px
     font-weight: 600
 
-    input
-      border-right: 1px solid $accent-color
-      margin-bottom: 1.5rem
-      width: 210px
+    button
+      background: none
+      border: none
 
-    button[type="submit"]
-      width: 210px
-      text-align: center
+    

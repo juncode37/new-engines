@@ -9,6 +9,7 @@
 @use 'vin-form' as *
 @use 'modal' as *
 @use 'advantages' as *
+@use 'callback' as *
 @use 'process' as *
 @use 'categories' as *
 @use 'reviews' as *
@@ -36,14 +37,28 @@ body
     border: 2px solid $success-color
 
   .call-trigger
-    background: transparent
-    border: none
-    padding: 0
-    cursor: pointer
+
+    transition: .5s
+
+    button
+      background: transparent
+      border: none
+      padding: 0
+      cursor: pointer
 
     svg
       animation: fa-shake 1s infinite linear
-      width: 48px
-      height: 48px
+      width: 60px
+      height: 60px
       background: transparrent
-      color: $success-color
+      color: $accent-color
+      
+  
+  .call-trigger-bottom
+    bottom: 100px
+    @media (max-width: 700px)
+      bottom: 50px
+
+
+  .call-trigger-center
+    top: 50%
