@@ -365,13 +365,28 @@ animatePistons();
 // animation pistons end
 
 // callback form
+
+const statuses = {
+
+  loading: '../icon/status.svg',
+  succes: "Заявка на обратный звонок успешно отправленна!",
+  error: "Ошибка отравки! Попробуйте позже",
+
+
+}
+
 const callBackForm = document.getElementById("callback-form");
 
 callBackForm.addEventListener("submit", async function (e) {
   e.preventDefault();
   e.stopPropagation();
 
-  // Проверяем валидность формы
+  const status = document.createElement('img')
+  status.style.cssText = 'display: block; margin: auto'
+  status.src = statuses.loading
+
+
+  
   if (!this.checkValidity()) {
     this.classList.add("was-validated");
     return;
@@ -382,7 +397,11 @@ callBackForm.addEventListener("submit", async function (e) {
   const BOT_TOKEN = "8504954718:AAHQFIt_EPJ8VkJtcOaiz6X988MTRls0k8Q";
   const CHAT_ID = "-1003339414257";
   const statusModal = new bootstrap.Modal("#status");
-  const ststusText = document.querySelector(".status-modal__text");
+  const statusText = document.querySelector(".status-modal__text");
+  const callbackBtn = document.querySelector(".callback__btn")
+
+  callbackBtn.textContent = ''
+  callbackBtn.append(status)
 
   const formData = new FormData(this);
 
@@ -419,7 +438,9 @@ callBackForm.addEventListener("submit", async function (e) {
       throw new Error("Ошибка отправки в Telegram");
     }
 
-    ststusText.textContent = "Заявка на обратный звонок успешно отправленна!";
+    status.remove()
+    callbackBtn.textContent = 'Отправить заявку'
+    statusText.textContent = statuses.succes;
     statusModal.show();
     this.reset();
     this.classList.remove("was-validated");
@@ -428,7 +449,9 @@ callBackForm.addEventListener("submit", async function (e) {
     }, 3000);
   } catch (error) {
     console.error(error);
-    ststusText.textContent = "Ошибка отравки! Попробуйте позже";
+    status.remove()
+    callbackBtn.textContent = 'Отправить заявку'
+    statusText.textContent = statuses.error;
     statusModal.show();
     setTimeout(function () {
       statusModal.hide();
