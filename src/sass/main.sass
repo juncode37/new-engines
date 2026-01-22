@@ -15,10 +15,9 @@
 @use 'reviews' as *
 @use 'contacts' as *
 @use 'footer' as *
-html, body 
+html, body
   overflow-x: hidden
   max-width: 100%
-
 
 body
   font-family: $family-base
@@ -36,6 +35,15 @@ body
 
   .was-validated .form-control:invalid
     border: 2px solid $error-color
+
+  .was-validated .form-check-input:invalid
+    background: $error-color
+  .form-check-input.is-invalid~.form-check-label, .was-validated .form-check-input:invalid~.form-check-label
+    color: $primary-color
+
+  .was-validated .form-check-input:valid~.form-check-label 
+    color: $primary-color
+
 
   .form-control.is-valid, .was-validated .form-control:valid
     border: 2px solid $success-color

@@ -477,8 +477,8 @@
           </div>
           <div class="container text-center">
             <div class="w-100"></div>
-            <form id="callback-form" class="row g-3 text-start callback__form">
-              <div class="col-md-12">
+            <form id="callback-form" class="row g-3 text-start callback__form needs-validation" novalidate>
+              <!-- <div class="col-md-12">
                 <label for="brand" class="form-label">Марка автомобиля</label>
                 <select
                   class="form-select callback__input w-100"
@@ -522,7 +522,7 @@
                   <option value="Volvo">Volvo</option>
                   <option value="other">Другая</option>
                 </select>
-              </div>
+              </div> -->
               <div class="col-md-12">
                 <label for="vin" class="form-label">VIN</label>
                 <input
@@ -955,7 +955,7 @@
         </svg>
       </button>
     </div>
-    <!-- Modal -->
+    <!-- messenger modal -->
     <div
       class="modal fade"
       id="sendVin"
@@ -1015,6 +1015,55 @@
                 data-messenger="max"
               ></div>
             </div>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- status modal -->
+    <div
+      class="modal fade status-modal"
+      id="status"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog vin-modal">
+        <div class="modal-content vin-modal__contnent">
+          <div class="modal-header justify-content-center">
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="35"
+                height="35"
+              >
+                <g>
+                  <rect
+                    x="8"
+                    y="18.75"
+                    width="24"
+                    height="2.5"
+                    fill="#FF6B35"
+                    rx="0.5"
+                    transform="rotate(45 20 20)"
+                  ></rect>
+                  <rect
+                    x="8"
+                    y="18.75"
+                    width="24"
+                    height="2.5"
+                    fill="#FF6B35"
+                    rx="0.5"
+                    transform="rotate(-45 20 20)"
+                  ></rect>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body status-modal__body">
+            <p class="status-modal__text"></p>
           </div>
           <div class="modal-footer"></div>
         </div>

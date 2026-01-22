@@ -379,20 +379,21 @@ callBackForm.addEventListener("submit", async function (e) {
 
   this.classList.add("was-validated");
 
-  const BOT_TOKEN = "ВСТАВЬ_СЮДА_ТОКЕН_БОТА";
-  const CHAT_ID = "ВСТАВЬ_СЮДА_ID_ГРУППЫ";
+  const BOT_TOKEN = "8504954718:AAHQFIt_EPJ8VkJtcOaiz6X988MTRls0k8Q";
+  const CHAT_ID = "-1003339414257";
+  const statusModal = new bootstrap.Modal("#status");
+  const ststusText = document.querySelector(".status-modal__text");
 
   const formData = new FormData(this);
 
-  const brand = formData.get("brand");
+  // const brand = formData.get("brand");
   const vin = formData.get("vin");
   const name = formData.get("username");
   const phone = "+7" + formData.get("phone");
 
   const message = `
-🆕 *Новая заявка*
+🆕 *Новая заявка Лучшиезапчасти.РФ*
 
-🚗 *Марка:* ${brand}
 📌 *VIN:* ${vin}
 👤 *Имя:* ${name}
 📞 *Телефон:* ${phone}
@@ -418,12 +419,20 @@ callBackForm.addEventListener("submit", async function (e) {
       throw new Error("Ошибка отправки в Telegram");
     }
 
-    alert("Заявка отправлена!");
+    ststusText.textContent = "Заявка на обратный звонок успешно отправленна!";
+    statusModal.show();
     this.reset();
     this.classList.remove("was-validated");
+    setTimeout(function () {
+      statusModal.hide();
+    }, 3000);
   } catch (error) {
     console.error(error);
-    alert("Ошибка отправки. Проверь консоль.");
+    ststusText.textContent = "Ошибка отравки! Попробуйте позже";
+    statusModal.show();
+    setTimeout(function () {
+      statusModal.hide();
+    }, 3000);
   }
 });
 
