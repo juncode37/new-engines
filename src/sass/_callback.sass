@@ -4,9 +4,9 @@
   padding-top: 32px
   color: $primary-color
   font-weight: 500
- 
+
   .wrapper
-    background: $accent-color 
+    background: $accent-color
     padding: 32px 0
 
   &__header
@@ -20,20 +20,28 @@
     p
       color: $accent-color
 
-  &__input
-    border-radius: 0
-    background: $bg-light
-  
-  .form-check-label
-    font-size: 12px
-  
-  &__btn
-    background: none
-    border: 2px solid $primary-color
-    border-radius: 0
-    font-weight: 600
-    font-size: 16px
+  &__form
+    width: 100%
+    max-width: 435px
+    margin: auto
+
+    input, select, span
+      border-radius: 0
+      background: $bg-light
 
     
 
-    
+    .form-check-label
+      font-size: 12px
+
+    button
+      background: $primary-color
+      color: $secondary-color
+      border-radius: 0
+      font-weight: 600
+      font-size: 16px
+      transition: 0.5s
+
+      &:hover
+        color: $accent-color
+        transform: scale(1.05)

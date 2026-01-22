@@ -13,8 +13,12 @@
 @use 'process' as *
 @use 'categories' as *
 @use 'reviews' as *
-@use 'faq' as *
+@use 'contacts' as *
 @use 'footer' as *
+html, body 
+  overflow-x: hidden
+  max-width: 100%
+
 
 body
   font-family: $family-base
@@ -52,13 +56,22 @@ body
       height: 60px
       background: transparrent
       color: $accent-color
-      
-  
+
   .call-trigger-bottom
     bottom: 100px
     @media (max-width: 700px)
       bottom: 50px
 
-
   .call-trigger-center
     top: 50%
+
+  .pistons
+    width: 100%
+    max-width: 504px
+
+  .piston
+    will-change: transform
+    transition: transform 0.05s linear
+    flex: 1 1 0
+    min-width: 0
+    object-fit: contain
