@@ -65,14 +65,13 @@ if (callTrigger) {
 function CallTriggerMove() {
   window.addEventListener("scroll", () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop  > window.innerHeight / 5 ) {
+    if (scrollTop > window.innerHeight / 5) {
       callTrigger.classList.remove("call-trigger-center");
       callTrigger.classList.add("call-trigger-bottom");
     } else {
       callTrigger.classList.remove("call-trigger-bottom");
       callTrigger.classList.add("call-trigger-center");
     }
-    console.log(scrollTop, window.innerHeight);
   });
 }
 
@@ -326,3 +325,106 @@ window.addEventListener("resize", updateSlideWidth);
 updateSlideWidth();
 
 // reviews slider end
+
+// animation pistons
+
+let animationProgress = 0;
+
+function animatePistons() {
+  const scrollY = window.scrollY;
+
+  animationProgress = scrollY / 100;
+
+  const pistons = document.querySelectorAll(".piston");
+
+  pistons.forEach((piston) => {
+    const phase = parseFloat(piston.dataset.phase);
+
+    const angle = animationProgress + (phase * Math.PI) / 180;
+
+    const position = Math.cos(angle);
+
+    const amplitude = 40;
+
+    piston.style.transform = `translateY(${position * amplitude}px)`;
+  });
+}
+
+let ticking = false;
+window.addEventListener("scroll", () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      animatePistons();
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
+
+animatePistons();
+// animation pistons end
+
+// callback form
+const callBackForm = document.getElementById("callback-form");
+
+callBackForm.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+
+  // Проверяем валидность формы
+  if (!this.checkValidity()) {
+    this.classList.add("was-validated");
+    return;
+  }
+
+  this.classList.add("was-validated");
+
+  const BOT_TOKEN = "ВСТАВЬ_СЮДА_ТОКЕН_БОТА";
+  const CHAT_ID = "ВСТАВЬ_СЮДА_ID_ГРУППЫ";
+
+  const formData = new FormData(this);
+
+  const brand = formData.get("brand");
+  const vin = formData.get("vin");
+  const name = formData.get("username");
+  const phone = "+7" + formData.get("phone");
+
+  const message = `
+🆕 *Новая заявка*
+
+🚗 *Марка:* ${brand}
+📌 *VIN:* ${vin}
+👤 *Имя:* ${name}
+📞 *Телефон:* ${phone}
+  `;
+
+  try {
+    const response = await fetch(
+      `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: message,
+          parse_mode: "Markdown",
+        }),
+      },
+    );
+
+    if (!response.ok) {
+      throw new Error("Ошибка отправки в Telegram");
+    }
+
+    alert("Заявка отправлена!");
+    this.reset();
+    this.classList.remove("was-validated");
+  } catch (error) {
+    console.error(error);
+    alert("Ошибка отправки. Проверь консоль.");
+  }
+});
+
+// callback form end
