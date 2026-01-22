@@ -368,7 +368,7 @@ animatePistons();
 
 const statuses = {
 
-  loading: '../icon/status.svg',
+  loading: './icon/status.svg',
   succes: "Заявка на обратный звонок успешно отправленна!",
   error: "Ошибка отравки! Попробуйте позже",
 
