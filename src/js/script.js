@@ -1,6 +1,8 @@
 // vin transform
-document.querySelector(".hero__input").addEventListener("input", function (e) {
-  e.target.value = e.target.value.toUpperCase();
+document.querySelectorAll(".vin-input").forEach((input) => {
+  input.addEventListener("input", (e) => {
+    e.target.value = e.target.value.toUpperCase();
+  });
 });
 // vin transform end
 
@@ -367,13 +369,10 @@ animatePistons();
 // callback form
 
 const statuses = {
-
-  loading: './icon/status.svg',
+  loading: "./icon/status.svg",
   succes: "Заявка на обратный звонок успешно отправленна!",
   error: "Ошибка отравки! Попробуйте позже",
-
-
-}
+};
 
 const callBackForm = document.getElementById("callback-form");
 
@@ -381,12 +380,10 @@ callBackForm.addEventListener("submit", async function (e) {
   e.preventDefault();
   e.stopPropagation();
 
-  const status = document.createElement('img')
-  status.style.cssText = 'display: block; margin: auto'
-  status.src = statuses.loading
+  const status = document.createElement("img");
+  status.style.cssText = "display: block; margin: auto";
+  status.src = statuses.loading;
 
-
-  
   if (!this.checkValidity()) {
     this.classList.add("was-validated");
     return;
@@ -398,15 +395,15 @@ callBackForm.addEventListener("submit", async function (e) {
   const CHAT_ID = "-1003339414257";
   const statusModal = new bootstrap.Modal("#status");
   const statusText = document.querySelector(".status-modal__text");
-  const callbackBtn = document.querySelector(".callback__btn")
+  const callbackBtn = document.querySelector(".callback__btn");
 
-  callbackBtn.textContent = ''
-  callbackBtn.append(status)
+  callbackBtn.textContent = "";
+  callbackBtn.append(status);
 
   const formData = new FormData(this);
 
   // const brand = formData.get("brand");
-  const vin = formData.get("vin");
+  const vin = formData.get("vin") ? formData.get("vin") : "нет VIN";
   const name = formData.get("username");
   const phone = "+7" + formData.get("phone");
 
@@ -438,8 +435,8 @@ callBackForm.addEventListener("submit", async function (e) {
       throw new Error("Ошибка отправки в Telegram");
     }
 
-    status.remove()
-    callbackBtn.textContent = 'Отправить заявку'
+    status.remove();
+    callbackBtn.textContent = "Отправить заявку";
     statusText.textContent = statuses.succes;
     statusModal.show();
     this.reset();
@@ -449,8 +446,8 @@ callBackForm.addEventListener("submit", async function (e) {
     }, 3000);
   } catch (error) {
     console.error(error);
-    status.remove()
-    callbackBtn.textContent = 'Отправить заявку'
+    status.remove();
+    callbackBtn.textContent = "Отправить заявку";
     statusText.textContent = statuses.error;
     statusModal.show();
     setTimeout(function () {

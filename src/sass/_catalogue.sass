@@ -1,0 +1,265 @@
+@use 'variables' as *
+
+.catalogue-page
+  background: $bg-light
+  color: $primary-color
+
+.catalogue-page, aside
+  input, select
+    border: 1px solid $accent-color
+    border-radius: 0
+
+    &:focus
+      border-color: $accent-color
+      box-shadow: 0 0 0 .15rem $accent-color-opacity-3
+
+  .catalogue-page-header
+
+    &__title
+
+      p
+        font-weight: 500
+
+      a
+        text-decoration: none
+        color: $primary-color
+        font-size: 32px
+        width: fit-content
+        margin: auto
+
+    &__form
+      border: 1px solid $accent-color
+      padding: 16px
+      background: $primary-color
+      color: $secondary-color
+
+      input, span
+        border: 1px solid $accent-color
+        border-radius: 0
+
+        &:focus
+          border-color: $accent-color
+          box-shadow: 0 0 0 .15rem $accent-color-opacity-3
+
+      button
+        background: $accent-color
+        color: $primary-color 
+        border-radius: 0
+        font-weight: 600
+
+        &:hover
+          color: $secondary-color
+
+    &__nav
+      color: $primary-color
+
+      a
+        color: $primary-color
+        text-decoration: none
+
+      .active
+        color: $primary-color
+        font-weight: 500
+
+.catalogue
+  margin-bottom: 200px
+
+  &__sidebar
+    background-color: $tertiary-color
+    height: fit-content
+    position: sticky
+    
+
+    button
+      border-radius: 0
+
+  &__sidebar-accept
+    background: $accent-color
+    color: $primary-color
+  &__sidebar-reset
+    background: none
+    color: $primary-color
+    border: 1px solid $secondary-color
+    color: $secondary-color
+
+  &__callback-form
+    background-color: $accent-color
+
+    button
+      background: $primary-color
+      color: $secondary-color
+
+.catalogue
+  &__content
+    padding: 0
+
+  // Шапка каталога
+  &__header
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05)
+    background: $primary-color
+    color: $secondary-color
+
+  &__results
+    strong
+      color: $accent-color
+
+  &__sort
+    max-width: 250px
+
+// Карточка товара
+.product-card
+  background-color: $secondary-color
+  overflow: hidden
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08)
+  transition: all 0.3s ease
+  height: 100%
+  display: flex
+  flex-direction: column
+
+  &:hover
+    transform: translateY(-5px)
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12)
+
+  &--sold
+    opacity: 0.6
+
+  // Изображение
+  &__image
+    position: relative
+    width: 100%
+    height: 200px
+    overflow: hidden
+    background-color: $bg-light
+
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    transition: transform 0.3s ease
+    @media (max-width: 768px)
+      height: auto
+      
+
+    .product-card:hover &
+      transform: scale(1.05)
+
+  // Бейдж
+  &__badge
+    position: absolute
+    top: 12px
+    right: 12px
+    background-color: $success-color
+    color: $secondary-color
+    padding: 4px 12px
+    border-radius: 4px
+    font-size: 0.75rem
+    font-weight: 600
+    text-transform: uppercase
+
+    &--sold
+      background-color: $text-secondary
+
+  // Тело карточки
+  &__body
+    padding: 1.25rem
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+
+  // Заголовок
+  &__title
+    font-size: 1.125rem
+    font-weight: 700
+    color: $primary-color
+    margin-bottom: 1rem
+
+  // Характеристики
+  &__specs
+    list-style: none
+    padding: 0
+    margin: 0 0 1.25rem 0
+    flex-grow: 1
+
+    li
+      font-size: 0.875rem
+      color: $primary-color
+      margin-bottom: 0.5rem
+      display: flex
+      justify-content: space-between
+
+      strong
+        color: $text-secondary
+        font-weight: 500
+        margin-right: 8px
+
+  // Подвал карточки
+  &__footer
+    display: flex
+    flex-direction: column
+    gap: 4px
+    align-items: center
+    padding-top: 1rem
+    border-top: 1px solid $bg-light
+
+    @media (max-width: 1200px)
+      flex-direction: column
+
+  // Цена
+  &__price
+    font-size: 1.5rem
+    font-weight: 700
+    color: $accent-color
+    text-align: center
+
+  // Кнопка
+  &__btn
+    background-color: $accent-color
+    color: $secondary-color
+    border: none
+    padding: 0.5rem 1.25rem
+    font-weight: 600
+    transition: all 0.3s ease
+    border-radius: 0
+    width: 100%
+
+    &:hover:not(:disabled)
+      color: $primary-color
+
+    &:disabled
+      background-color: $text-secondary
+      cursor: not-allowed
+
+  &__btn-send
+    background: $primary-color
+
+    &:hover:not(:disabled)
+      color: $accent-color
+
+// Пагинация
+.pagination
+  .page-link
+    color: $primary-color
+    border-color: $border-color
+
+    &:hover
+      background-color: $bg-light
+      border-color: $accent-color
+      color: $accent-color
+
+  .page-item.active .page-link
+    background-color: $accent-color
+    border-color: $accent-color
+
+// Адаптивность
+@media (max-width: 768px)
+  .catalogue__header
+    flex-direction: column
+    gap: 1rem
+    align-items: flex-start !important
+
+  .catalogue__sort
+    width: 100%
+    max-width: 100%
+
+  .product-card__price
+    font-size: 1.25rem

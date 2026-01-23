@@ -1,5 +1,4 @@
-const enginesData = [
-    {
+  {
     "source": "mysakura",
     "source_url": "https://mysakura.ru/product/67055",
     "product_id": 67055,
@@ -175,4 +174,3 @@ const enginesData = [
       "https://storage.yandexcloud.net/mysakura/17664027361_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
     ]
   }
-];

@@ -4,6 +4,12 @@
 
   a
     color: $secondary-color
+
+
+    &:hover:not(.header__link--active)
+      
+      color: $accent-color
+      
   nav
     background: $primary-color
     border-bottom: 1px solid $accent-color
@@ -11,6 +17,9 @@
   &__link--active
     font-weight: bold
     text-decoration: underline
+    
+    &:hover
+      color: $secondary-color
 
   &__logo
     width: 50px
