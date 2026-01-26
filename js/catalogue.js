@@ -1,3 +1,5 @@
+let isInitialLoad = true;
+
 // vin transform
 document.querySelectorAll(".vin-input").forEach((input) => {
   input.addEventListener("input", (e) => {
@@ -25,6 +27,7 @@ document.querySelectorAll(".vin-input").forEach((input) => {
   });
 })();
 // validation end
+
 // form
 let currentVin = "";
 const vinForms = document.querySelectorAll(".vin-form");
@@ -46,27 +49,27 @@ vinForms.forEach((form) => {
 });
 
 const modalElement = document.getElementById("sendVin");
-modalElement.addEventListener("hidden.bs.modal", function () {
-  const allForms = document.querySelectorAll(".vin-form");
-  allForms.forEach((form) => {
-    form.classList.remove("was-validated");
-    form.reset();
+if (modalElement) {
+  modalElement.addEventListener("hidden.bs.modal", function () {
+    const allForms = document.querySelectorAll(".vin-form");
+    allForms.forEach((form) => {
+      form.classList.remove("was-validated");
+      form.reset();
+    });
   });
-});
+}
 //  form end
 
 // send messages
 document.addEventListener("DOMContentLoaded", () => {
-  // Делегирование событий - слушаем клики на родителе
+
   document.addEventListener("click", (e) => {
     if (e.target.closest(".product-card__btn-send")) {
       const modal = new bootstrap.Modal("#sendSms");
       modal.show();
     }
   });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  // Делегирование событий - слушаем клики на родителе
+
   document.addEventListener("click", (e) => {
     if (e.target.closest(".product-card__btn-vin")) {
       const modal = new bootstrap.Modal("#sendVin");
@@ -76,8 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function sendToMessenger(messenger, vin) {
-  // Если VIN есть - отправляем сообщение про VIN
-  // Если VIN нет (клик по телефону) - отправляем общее сообщение
+  if (messenger === "tel") {
+    window.location.href = "tel:+79874453508";
+    return;
+  }
   let message;
 
   if (vin) {
@@ -124,7 +129,7 @@ messengerButtons.forEach((btn) => {
 // send messagesend
 
 const statuses = {
-  loading: "./icon/status.svg",
+  loading: "./icon/status-white.svg",
   succes: "Заявка на обратный звонок успешно отправленна!",
   error: "Ошибка отравки! Попробуйте позже",
 };
@@ -192,7 +197,7 @@ catalogueForms.forEach((catalogueForm) => {
         throw new Error("Ошибка отправки в Telegram");
       }
 
-      modal.hide();
+      if (modal) modal.hide();
       status.remove();
       callbackBtn.textContent = "Отправить заявку";
       statusText.textContent = statuses.succes;
@@ -205,7 +210,6 @@ catalogueForms.forEach((catalogueForm) => {
     } catch (error) {
       console.error(error);
       status.remove();
-      status.remove();
       callbackBtn.textContent = "Отправить заявку";
       statusText.textContent = statuses.error;
       statusModal.show();
@@ -216,24 +220,56 @@ catalogueForms.forEach((catalogueForm) => {
   });
 });
 
-// ============================================
-// ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ
-// ============================================
-let allProducts = []; // Все товары
-let filteredProducts = []; // Отфильтрованные товары
+
+// Call trigger button
+const callTrigger = document.querySelector(".call-trigger");
+
+if (callTrigger) {
+  callTrigger.addEventListener("click", () => {
+    const modal = new bootstrap.Modal("#sendSms");
+    modal.show();
+  });
+}
+function CallTriggerMove() {
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > window.innerHeight / 5) {
+      callTrigger.classList.remove("call-trigger-center");
+      callTrigger.classList.add("call-trigger-bottom");
+    } else {
+      callTrigger.classList.remove("call-trigger-bottom");
+      callTrigger.classList.add("call-trigger-center");
+    }
+  });
+}
+
+function callTriggerPosition() {
+  if (window.innerWidth < 700) {
+    callTrigger.classList.remove("call-trigger-bottom");
+    callTrigger.classList.add("call-trigger-center");
+    CallTriggerMove();
+  } else {
+    callTrigger.classList.remove("call-trigger-center");
+    callTrigger.classList.add("call-trigger-bottom");
+  }
+}
+
+callTriggerPosition();
+
+// Call trigger end
+
+
+let allProducts = [];
+let filteredProducts = [];
 let currentPage = 1;
-const itemsPerPage = 9; // Количество товаров на странице
+const itemsPerPage = 9;
 
-// ============================================
-// УТИЛИТЫ
-// ============================================
 
-// Получение уникальных значений из массива объектов
+
 function getUniqueValues(array, key) {
   return [...new Set(array.map((item) => item[key]))].filter(Boolean).sort();
 }
 
-// Получение моделей для конкретной марки
 function getModelsByBrand(brand) {
   if (!brand) return [];
   return getUniqueValues(
@@ -242,19 +278,15 @@ function getModelsByBrand(brand) {
   );
 }
 
-// Парсинг года из строки формата "11.2009"
 function parseYear(yearString) {
   if (!yearString) return null;
   const match = yearString.match(/\d{4}/);
   return match ? parseInt(match[0]) : null;
 }
 
-// ============================================
-// ЗАПОЛНЕНИЕ ФИЛЬТРОВ
-// ============================================
+
 
 function populateFilters() {
-  // Заполняем марки
   const brands = getUniqueValues(allProducts, "make");
   const brandSelect = document.getElementById("brand-filter");
   brandSelect.innerHTML = '<option value="">Все марки</option>';
@@ -262,7 +294,6 @@ function populateFilters() {
     brandSelect.innerHTML += `<option value="${brand}">${brand}</option>`;
   });
 
-  // Заполняем типы двигателей
   const engineTypes = getUniqueValues(allProducts, "engine_type").filter(
     (type) => type !== "unknown",
   );
@@ -273,7 +304,6 @@ function populateFilters() {
   });
 }
 
-// Обновление моделей при выборе марки
 function updateModelOptions(selectedBrand) {
   const modelSelect = document.getElementById("model-filter");
   modelSelect.innerHTML = '<option value="">Все модели</option>';
@@ -289,23 +319,18 @@ function updateModelOptions(selectedBrand) {
   }
 }
 
-// ============================================
-// ФИЛЬТРАЦИЯ
-// ============================================
+
 
 function applyFilters(formData) {
   filteredProducts = allProducts.filter((product) => {
-    // Фильтр по марке
     if (formData.brand && product.make !== formData.brand) {
       return false;
     }
 
-    // Фильтр по модели
     if (formData.model && product.model !== formData.model) {
       return false;
     }
 
-    // Фильтр по году
     if (formData.year) {
       const productYear = parseYear(product.year);
       if (productYear !== parseInt(formData.year)) {
@@ -313,17 +338,14 @@ function applyFilters(formData) {
       }
     }
 
-    // Фильтр по типу двигателя
     if (formData.engineType && product.engine_type !== formData.engineType) {
       return false;
     }
 
-    // Фильтр по цене (от)
     if (formData.priceFrom && product.price < parseInt(formData.priceFrom)) {
       return false;
     }
 
-    // Фильтр по цене (до)
     if (formData.priceTo && product.price > parseInt(formData.priceTo)) {
       return false;
     }
@@ -331,14 +353,10 @@ function applyFilters(formData) {
     return true;
   });
 
-  // Сброс на первую страницу при фильтрации
   currentPage = 1;
   updateDisplay();
 }
 
-// ============================================
-// СОРТИРОВКА
-// ============================================
 
 function sortProducts(sortType) {
   switch (sortType) {
@@ -363,16 +381,12 @@ function sortProducts(sortType) {
       });
       break;
     default:
-      // Возврат к исходному порядку
       applyFilters(getCurrentFormData());
       return;
   }
   updateDisplay();
 }
 
-// ============================================
-// ПАГИНАЦИЯ
-// ============================================
 
 function getPaginatedProducts() {
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -395,18 +409,15 @@ function renderPagination() {
 
   let paginationHTML = "";
 
-  // Кнопка "Предыдущая"
   paginationHTML += `
     <li class="page-item ${currentPage === 1 ? "disabled" : ""}">
       <a class="page-link" href="#" data-page="${currentPage - 1}">Предыдущая</a>
     </li>
   `;
 
-  // Логика отображения страниц
   let startPage = Math.max(1, currentPage - 2);
   let endPage = Math.min(totalPages, currentPage + 2);
 
-  // Первая страница
   if (startPage > 1) {
     paginationHTML += `
       <li class="page-item">
@@ -418,7 +429,6 @@ function renderPagination() {
     }
   }
 
-  // Страницы
   for (let i = startPage; i <= endPage; i++) {
     paginationHTML += `
       <li class="page-item ${i === currentPage ? "active" : ""}">
@@ -427,7 +437,6 @@ function renderPagination() {
     `;
   }
 
-  // Последняя страница
   if (endPage < totalPages) {
     if (endPage < totalPages - 1) {
       paginationHTML += `<li class="page-item disabled"><span class="page-link">...</span></li>`;
@@ -439,7 +448,6 @@ function renderPagination() {
     `;
   }
 
-  // Кнопка "Следующая"
   paginationHTML += `
     <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
       <a class="page-link" href="#" data-page="${currentPage + 1}">Следующая</a>
@@ -449,10 +457,6 @@ function renderPagination() {
   paginationContainer.innerHTML = paginationHTML;
 }
 
-// ============================================
-// РЕНДЕРИНГ
-// ============================================
-
 function renderProductCard(product) {
   const {
     product_id,
@@ -467,7 +471,7 @@ function renderProductCard(product) {
     stock_text,
   } = product;
 
-  const formattedPrice = price ? price.toLocaleString("ru-RU") : "";
+  const formattedPrice = price ? price.toLocaleString("ru-RU") : "Цена не указана";
   const inStock = stock_text !== "Продано";
   const badgeClass = inStock
     ? "product-card__badge"
@@ -480,86 +484,16 @@ function renderProductCard(product) {
   const displayYear = year || "Не указан";
   const displayEngineType =
     engine_type === "unknown" || !engine_type ? "Не указан" : engine_type;
-  const mainImage =
-    images && images.length > 0 ? images[0] : "";
+  const mainImage = images && images.length > 0 ? images[0] : "";
 
   return `
     <div class="col-lg-4 col-md-6 col-sm-12">
       <div class="${cardClass}">
         <div class="product-card__image">
-          <img 
-            src="${mainImage}" 
-            alt="${title} ${make} ${model} ${engine_code}" 
-            class="product-card__img"
-          >
-          <span class="${badgeClass}">${badgeText}</span>
-        </div>
-        <div class="product-card__body">
-          <h5 class="product-card__title">${make} ${model} ${engine_code}</h5>
-          <ul class="product-card__specs">
-            <li><strong>Марка:</strong> <span>${make}</span></li>
-            <li><strong>Модель:</strong> <span>${model}</span></li>
-            <li><strong>Год:</strong> <span>${displayYear}</span></li>
-            <li><strong>Код двигателя:</strong> <span>${engine_code}</span></li>
-            <li><strong>Тип:</strong> <span>${displayEngineType}</span></li>
-          </ul>
-           <div class="product-card__price">${formattedPrice ? formattedPrice + "₽" : "По запросу"} </div>
-        </div>
-        <div class="product-card__footer">
-            <button class="btn product-card__btn product-card__btn-vin" data-product-id="${product_id}" ${buttonDisabled}>
-              Отправить VIN
-            </button>
-            <button class="btn product-card__btn product-card__btn-send" data-product-id="${product_id}" ${buttonDisabled}>
-              Написать в мессенджер
-            </button>
-          </div>
-      </div>
-    </div>
-  `;
-}
-
-function renderProductCard(product) {
-  const {
-    product_id,
-    title,
-    make,
-    model,
-    year,
-    engine_code,
-    engine_type,
-    price,
-    images,
-    stock_text,
-  } = product;
-
-  const formattedPrice = price
-    ? price.toLocaleString("ru-RU")
-    : "Цена не указана";
-  const inStock = stock_text !== "Продано";
-  const badgeClass = inStock
-    ? "product-card__badge"
-    : "product-card__badge product-card__badge--sold";
-  const badgeText = inStock ? "В наличии" : "Продано";
-  const cardClass = inStock
-    ? "product-card"
-    : "product-card product-card--sold";
-  const buttonDisabled = inStock ? "" : "disabled";
-  const displayYear = year || "Не указан";
-  const displayEngineType =
-    engine_type === "unknown" || !engine_type ? "Не указан" : engine_type;
-  const mainImage =
-    images && images.length > 0 ? images[0] : "";
-
-  return `
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="${cardClass}">
-        <div class="product-card__image">
-          <!-- Loader -->
           <div class="product-card__loader" data-product="${product_id}">
             <img src="./icon/status.svg" alt="Загрузка...">
           </div>
           
-          <!-- Картинка скрыта -->
           <img 
             src="${mainImage}" 
             alt="${title} ${make} ${model} ${engine_code}" 
@@ -576,9 +510,11 @@ function renderProductCard(product) {
             <li><strong>Модель:</strong> <span>${model}</span></li>
             <li><strong>Год:</strong> <span>${displayYear}</span></li>
             <li><strong>Код двигателя:</strong> <span>${engine_code}</span></li>
-            <li><strong>Тип:</strong> <span>${displayEngineType}</span></li>
           </ul>
-           <div class="product-card__price">${formattedPrice} ₽</div>
+           <div class="product-card__price">
+            ${formattedPrice} ₽</div>
+            <small>Цена указана приблизительно. Точную цену уточнйте у менеджера</small>
+           
         </div>
         <div class="product-card__footer">
             <button class="btn product-card__btn product-card__btn-vin" data-product-id="${product_id}" ${buttonDisabled}>
@@ -593,7 +529,6 @@ function renderProductCard(product) {
   `;
 }
 
-// Функция обработки загрузки
 function handleImageLoading() {
   const images = document.querySelectorAll(".product-card__img");
 
@@ -603,13 +538,11 @@ function handleImageLoading() {
       `.product-card__loader[data-product="${productId}"]`,
     );
 
-    // Картинка загрузилась - скрываем loader, показываем картинку
     img.addEventListener("load", function () {
       this.style.display = "block";
       if (loader) loader.style.display = "none";
     });
 
-    // Ошибка загрузки - показываем placeholder
     img.addEventListener("error", function () {
       this.src = "";
       if (loader) loader.style.display = "none";
@@ -617,7 +550,6 @@ function handleImageLoading() {
   });
 }
 
-// В функции updateDisplay добавь вызов
 function updateDisplay() {
   document.querySelector(".catalogue__results strong").textContent =
     filteredProducts.length;
@@ -639,21 +571,20 @@ function updateDisplay() {
       .map((product) => renderProductCard(product))
       .join("");
 
-    // Вызываем обработку загрузки
     handleImageLoading();
   }
 
   renderPagination();
 
-  document.querySelector(".catalogue__content").scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
+
+  if (!isInitialLoad) {
+    document.querySelector(".catalogue__content").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
 }
 
-// ============================================
-// ОБРАБОТЧИКИ СОБЫТИЙ
-// ============================================
 
 function getCurrentFormData() {
   return {
@@ -667,21 +598,17 @@ function getCurrentFormData() {
 }
 
 function setupEventListeners() {
-  // Изменение марки
   document.getElementById("brand-filter").addEventListener("change", (e) => {
     updateModelOptions(e.target.value);
-    // Сброс модели при смене марки
     document.getElementById("model-filter").value = "";
   });
 
-  // Применение фильтров
   document.getElementById("filters-form").addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = getCurrentFormData();
     applyFilters(formData);
   });
 
-  // Сброс фильтров
   document.getElementById("filters-form").addEventListener("reset", () => {
     setTimeout(() => {
       document.getElementById("model-filter").disabled = true;
@@ -691,12 +618,10 @@ function setupEventListeners() {
     }, 0);
   });
 
-  // Сортировка
   document.getElementById("sort-select").addEventListener("change", (e) => {
     sortProducts(e.target.value);
   });
 
-  // Пагинация (делегирование событий)
   document.querySelector(".pagination").addEventListener("click", (e) => {
     e.preventDefault();
     if (e.target.tagName === "A" && !e.target.closest(".disabled")) {
@@ -709,7 +634,6 @@ function setupEventListeners() {
   });
 }
 
-// Функция для рандомной перемешки массива (Fisher-Yates shuffle)
 function shuffleArray(array) {
   const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -718,21 +642,18 @@ function shuffleArray(array) {
   }
   return shuffled;
 }
-// ============================================
-// ИНИЦИАЛИЗАЦИЯ
-// ============================================
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Загрузка данных (предполагается, что enginesData доступна глобально)
   allProducts = shuffleArray(enginesData || []);
   filteredProducts = [...allProducts];
 
-  // Заполнение фильтров
   populateFilters();
-
-  // Первоначальный рендеринг
   updateDisplay();
-
-  // Настройка обработчиков
   setupEventListeners();
+
+
+  setTimeout(() => {
+    isInitialLoad = false;
+  }, 100);
 });

@@ -1823,4 +1823,6029 @@ const enginesData = [
       "https://storage.yandexcloud.net/mysakura/176612249094_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000",
     ],
   },
+    {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67303",
+    "product_id": 67303,
+    "title": "Двигатель",
+    "make": "Volvo",
+    "model": "Xc60",
+    "year": null,
+    "engine_code": "B4204T7",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176648217756_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67301",
+    "product_id": 67301,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Element",
+    "year": null,
+    "engine_code": "K24A4",
+    "engine_type": "unknown",
+    "price": 120000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176648187046_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67299",
+    "product_id": 67299,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Element",
+    "year": null,
+    "engine_code": "K24A4",
+    "engine_type": "unknown",
+    "price": 120000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176648160481_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67297",
+    "product_id": 67297,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Element",
+    "year": null,
+    "engine_code": "K24A8",
+    "engine_type": "unknown",
+    "price": 95000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176648115589_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67295",
+    "product_id": 67295,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Element",
+    "year": null,
+    "engine_code": "K24A8",
+    "engine_type": "unknown",
+    "price": 95000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176648063813_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67293",
+    "product_id": 67293,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Civic",
+    "year": null,
+    "engine_code": "R18A1",
+    "engine_type": "unknown",
+    "price": 60000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176648017197_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67291",
+    "product_id": 67291,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Civic",
+    "year": null,
+    "engine_code": "R18A1",
+    "engine_type": "unknown",
+    "price": 60000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176647957136_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67289",
+    "product_id": 67289,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Civic",
+    "year": null,
+    "engine_code": "R18A1",
+    "engine_type": "unknown",
+    "price": 60000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176647912313_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67287",
+    "product_id": 67287,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "CR-V",
+    "year": null,
+    "engine_code": "R20A1",
+    "engine_type": "unknown",
+    "price": 55000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176647366710_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67285",
+    "product_id": 67285,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "CR-V",
+    "year": null,
+    "engine_code": "R20A1",
+    "engine_type": "unknown",
+    "price": 55000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176647306643_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67283",
+    "product_id": 67283,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "CR-V",
+    "year": null,
+    "engine_code": "R20A1",
+    "engine_type": "unknown",
+    "price": 55000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17664726839_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67281",
+    "product_id": 67281,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "CR-V",
+    "year": null,
+    "engine_code": "K24Z1",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176647164459_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67279",
+    "product_id": 67279,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "CR-V",
+    "year": null,
+    "engine_code": "K24Z1",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17664711950_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67277",
+    "product_id": 67277,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Accord",
+    "year": null,
+    "engine_code": "R20A3",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176647029730_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67275",
+    "product_id": 67275,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Accord",
+    "year": null,
+    "engine_code": "R20A3",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176646969584_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67272",
+    "product_id": 67272,
+    "title": "Двигатель",
+    "make": "Chevrolet",
+    "model": "Aveo",
+    "year": null,
+    "engine_code": "L95",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176646709386_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67270",
+    "product_id": 67270,
+    "title": "Двигатель",
+    "make": "Chevrolet",
+    "model": "Aveo",
+    "year": null,
+    "engine_code": "LMU",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "93736684",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176646529968_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67268",
+    "product_id": 67268,
+    "title": "Двигатель",
+    "make": "Chevrolet",
+    "model": "Aveo",
+    "year": null,
+    "engine_code": "LMU",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "93736684",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176646478929_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67266",
+    "product_id": 67266,
+    "title": "Двигатель",
+    "make": "Volkswagen",
+    "model": "Polo",
+    "year": null,
+    "engine_code": "CLSA",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "03C100038G",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176646323860_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67264",
+    "product_id": 67264,
+    "title": "Двигатель",
+    "make": "Volkswagen",
+    "model": "Jetta",
+    "year": null,
+    "engine_code": "CFNA",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "03C100038H",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176646297582_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67262",
+    "product_id": 67262,
+    "title": "Двигатель",
+    "make": "Volkswagen",
+    "model": "Jetta",
+    "year": null,
+    "engine_code": "CFNA",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "03C100038H",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176645995734_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67260",
+    "product_id": 67260,
+    "title": "Двигатель",
+    "make": "Volkswagen",
+    "model": "Jetta",
+    "year": null,
+    "engine_code": "CFNA",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "03C100038H",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176645837128_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67258",
+    "product_id": 67258,
+    "title": "Двигатель",
+    "make": "Geely",
+    "model": "Coolray",
+    "year": null,
+    "engine_code": "JLH-3G15TD",
+    "engine_type": "unknown",
+    "price": 115000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17664565017_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67256",
+    "product_id": 67256,
+    "title": "Двигатель",
+    "make": "Haval",
+    "model": "H6",
+    "year": null,
+    "engine_code": "GW4G15B",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176645606253_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67249",
+    "product_id": 67249,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZR-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000T030",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176641329443_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67247",
+    "product_id": 67247,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZZ-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900022A40",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176641208697_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67245",
+    "product_id": 67245,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZZ-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900022330",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176641187944_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67243",
+    "product_id": 67243,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZZ-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "170000D820",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176641156323_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67241",
+    "product_id": 67241,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZZ-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "170000D820",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176641125440_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67239",
+    "product_id": 67239,
+    "title": "Двигатель",
+    "make": "Audi",
+    "model": "A6",
+    "year": null,
+    "engine_code": "BPJ",
+    "engine_type": "unknown",
+    "price": 120000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "06D100033H",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176641092046_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67237",
+    "product_id": 67237,
+    "title": "Двигатель",
+    "make": "Audi",
+    "model": "A6",
+    "year": null,
+    "engine_code": "BDW",
+    "engine_type": "unknown",
+    "price": 128000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "000100020AH",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176641077158_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67235",
+    "product_id": 67235,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "ASX",
+    "year": null,
+    "engine_code": "4A92",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17664105164_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+    {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67233",
+    "product_id": 67233,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "ASX",
+    "year": null,
+    "engine_code": "4A92",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176641036622_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67231",
+    "product_id": 67231,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Lancer",
+    "year": null,
+    "engine_code": "4A91",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176641019298_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67229",
+    "product_id": 67229,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Lancer",
+    "year": null,
+    "engine_code": "4A91",
+    "engine_type": "unknown",
+    "price": 50000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176641005942_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67227",
+    "product_id": 67227,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZZ-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "170000D820",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17664098281_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67225",
+    "product_id": 67225,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Lancer",
+    "year": null,
+    "engine_code": "4A91",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640952733_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67223",
+    "product_id": 67223,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Outlander",
+    "year": null,
+    "engine_code": "4B12",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000A945, 1000C854",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17664093611_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67221",
+    "product_id": 67221,
+    "title": "Двигатель",
+    "make": "Audi",
+    "model": "A6",
+    "year": null,
+    "engine_code": "BDW",
+    "engine_type": "unknown",
+    "price": 128000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640897540_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67219",
+    "product_id": 67219,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Note",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 48000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102CJ00F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640871433_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67217",
+    "product_id": 67217,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Note",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 48000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102CJ00F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640837292_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67215",
+    "product_id": 67215,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Note",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 48000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102CJ00F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640813235_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67213",
+    "product_id": 67213,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Teana",
+    "year": null,
+    "engine_code": "VQ25DE",
+    "engine_type": "unknown",
+    "price": 35000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JN0AW",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640766613_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67211",
+    "product_id": 67211,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Galant Fortis",
+    "year": null,
+    "engine_code": "4B10",
+    "engine_type": "unknown",
+    "price": 117000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640740377_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67209",
+    "product_id": 67209,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Lancer",
+    "year": null,
+    "engine_code": "4B10",
+    "engine_type": "unknown",
+    "price": 117000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640699130_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67207",
+    "product_id": 67207,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Note",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 48000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102CJ00F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640662688_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67205",
+    "product_id": 67205,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "ASX",
+    "year": null,
+    "engine_code": "4A92",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640627752_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67203",
+    "product_id": 67203,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": null,
+    "engine_code": "2AZ-FE",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000H132",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640606045_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67201",
+    "product_id": 67201,
+    "title": "Двигатель",
+    "make": "Audi",
+    "model": "A6",
+    "year": null,
+    "engine_code": "BDW",
+    "engine_type": "unknown",
+    "price": 128000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "000100020AH",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640568612_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67200",
+    "product_id": 67200,
+    "title": "Двигатель",
+    "make": "Peugeot",
+    "model": "207",
+    "year": null,
+    "engine_code": "TU3A",
+    "engine_type": "unknown",
+    "price": 70000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "0135 LZ",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640554342_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67198",
+    "product_id": 67198,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Pickup",
+    "year": null,
+    "engine_code": "KA24DE",
+    "engine_type": "unknown",
+    "price": 120000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640530953_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67196",
+    "product_id": 67196,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZZ-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900022A40",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17664050204_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67194",
+    "product_id": 67194,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla Rumion",
+    "year": null,
+    "engine_code": "2ZR-FE",
+    "engine_type": "unknown",
+    "price": 130000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000T040",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640476875_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67192",
+    "product_id": 67192,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla Rumion",
+    "year": null,
+    "engine_code": "2ZR-FE",
+    "engine_type": "unknown",
+    "price": 130000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000T040",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640443597_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67190",
+    "product_id": 67190,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "ASX",
+    "year": null,
+    "engine_code": "4B11",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000C726, 1000C837",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640395565_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67188",
+    "product_id": 67188,
+    "title": "Двигатель",
+    "make": "Volvo",
+    "model": "S80",
+    "year": null,
+    "engine_code": "B4204T6",
+    "engine_type": "unknown",
+    "price": 160000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "36001879, 36001988, ...",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640357881_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67186",
+    "product_id": 67186,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Lancer",
+    "year": null,
+    "engine_code": "4B10",
+    "engine_type": "unknown",
+    "price": 117000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640300669_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67184",
+    "product_id": 67184,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Camry",
+    "year": null,
+    "engine_code": "2AZ-FE",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000H140",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17664027361_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67182",
+    "product_id": 67182,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Tiida",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 48000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101021PW2F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176640243234_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67180",
+    "product_id": 67180,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Legacy",
+    "year": null,
+    "engine_code": "EJ253",
+    "engine_type": "unknown",
+    "price": 70000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BT760",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639730312_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67178",
+    "product_id": 67178,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla Rumion",
+    "year": null,
+    "engine_code": "2ZR-FE",
+    "engine_type": "unknown",
+    "price": 95000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000T040",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639708583_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67176",
+    "product_id": 67176,
+    "title": "Двигатель",
+    "make": "Peugeot",
+    "model": "4008",
+    "year": null,
+    "engine_code": "4B11",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639586187_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67174",
+    "product_id": 67174,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Outlander",
+    "year": null,
+    "engine_code": "4B12",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000B575, 1000C854",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639550314_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67172",
+    "product_id": 67172,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZZ-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900022A40",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639524548_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+    {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67170",
+    "product_id": 67170,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Swift",
+    "year": null,
+    "engine_code": "M15A",
+    "engine_type": "unknown",
+    "price": 72000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "2000962JE2",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639471761_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67168",
+    "product_id": 67168,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Swift",
+    "year": null,
+    "engine_code": "M15A",
+    "engine_type": "unknown",
+    "price": 72000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639452515_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67166",
+    "product_id": 67166,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZZ-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900022A40",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639414685_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67164",
+    "product_id": 67164,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "ASX",
+    "year": null,
+    "engine_code": "4B11",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000C726, 1000C837",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639364878_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67162",
+    "product_id": 67162,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "X-Trail",
+    "year": null,
+    "engine_code": "QR25DE",
+    "engine_type": "unknown",
+    "price": 88000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JG3AC",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639294385_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67160",
+    "product_id": 67160,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "ASX",
+    "year": null,
+    "engine_code": "4B11",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000B379, 1000C837",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176620273677_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67158",
+    "product_id": 67158,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "X-Trail",
+    "year": null,
+    "engine_code": "QR25DE",
+    "engine_type": "unknown",
+    "price": 88000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JG3AC",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639204652_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67156",
+    "product_id": 67156,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": null,
+    "engine_code": "1AZ-FE",
+    "engine_type": "unknown",
+    "price": 140000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000H150",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639170524_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67154",
+    "product_id": 67154,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Swift",
+    "year": null,
+    "engine_code": "M15A",
+    "engine_type": "unknown",
+    "price": 72000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639138571_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67152",
+    "product_id": 67152,
+    "title": "Двигатель",
+    "make": "Chevrolet",
+    "model": "Lacetti",
+    "year": null,
+    "engine_code": "T18SED",
+    "engine_type": "unknown",
+    "price": 95000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639074832_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67150",
+    "product_id": 67150,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Tiida",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 48000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101021PW2F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176639014425_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67148",
+    "product_id": 67148,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "SX4",
+    "year": null,
+    "engine_code": "M16A",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176638964373_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67146",
+    "product_id": 67146,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "SX4",
+    "year": null,
+    "engine_code": "M16A",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176638951434_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67144",
+    "product_id": 67144,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Qashqai",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JE30F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176638892431_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67142",
+    "product_id": 67142,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Qashqai",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 55000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JE30F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176638864160_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67140",
+    "product_id": 67140,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Qashqai",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 55000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JN30F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176638829999_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67138",
+    "product_id": 67138,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "SX4",
+    "year": null,
+    "engine_code": "M16A",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17663814223_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67136",
+    "product_id": 67136,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Qashqai",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JN30F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176638098794_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67134",
+    "product_id": 67134,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": null,
+    "engine_code": "1AZ-FE",
+    "engine_type": "unknown",
+    "price": 140000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000H150",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176638072058_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67133",
+    "product_id": 67133,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZR-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000T030",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17663799386_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67131",
+    "product_id": 67131,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZR-FE",
+    "engine_type": "unknown",
+    "price": 110000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000T030",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176637905021_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67129",
+    "product_id": 67129,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "X-Trail",
+    "year": null,
+    "engine_code": "QR25DE",
+    "engine_type": "unknown",
+    "price": 88000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JG3AC",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17663784792_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67128",
+    "product_id": 67128,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZR-FE",
+    "engine_type": "unknown",
+    "price": 110000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000T030",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176637796662_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67126",
+    "product_id": 67126,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": null,
+    "engine_code": "1AZ-FE",
+    "engine_type": "unknown",
+    "price": 130000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000H150",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17663773709_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67124",
+    "product_id": 67124,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "SX4",
+    "year": null,
+    "engine_code": "M16A",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176637581776_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67122",
+    "product_id": 67122,
+    "title": "Двигатель",
+    "make": "Chevrolet",
+    "model": "Rezzo",
+    "year": null,
+    "engine_code": "T20SED",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176637487650_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67120",
+    "product_id": 67120,
+    "title": "Двигатель",
+    "make": "Chevrolet",
+    "model": "Lacetti",
+    "year": null,
+    "engine_code": "T18SED",
+    "engine_type": "unknown",
+    "price": 95000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176620714498_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67118",
+    "product_id": 67118,
+    "title": "Двигатель",
+    "make": "Hyundai",
+    "model": "Solaris",
+    "year": null,
+    "engine_code": "G4FA",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "211012BB14",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176620628399_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67117",
+    "product_id": 67117,
+    "title": "Двигатель",
+    "make": "Peugeot",
+    "model": "207",
+    "year": null,
+    "engine_code": "TU3A",
+    "engine_type": "unknown",
+    "price": 70000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "0135 LZ",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176620369473_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67115",
+    "product_id": 67115,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Outlander",
+    "year": null,
+    "engine_code": "6B31",
+    "engine_type": "unknown",
+    "price": 209000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000A820, 1000C880",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176620303593_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67113",
+    "product_id": 67113,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "ASX",
+    "year": null,
+    "engine_code": "4B11",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000C837, 1000B379",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17662027521_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67112",
+    "product_id": 67112,
+    "title": "Двигатель",
+    "make": "Daihatsu",
+    "model": "Terios",
+    "year": null,
+    "engine_code": "K3-VE",
+    "engine_type": "unknown",
+    "price": 130000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176612249094_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+    {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67110",
+    "product_id": 67110,
+    "title": "Двигатель",
+    "make": "Volvo",
+    "model": "S60",
+    "year": null,
+    "engine_code": "B4204T6",
+    "engine_type": "unknown",
+    "price": 160000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "36001879, 36001988, ...",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176612210031_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67108",
+    "product_id": 67108,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Datsun",
+    "year": null,
+    "engine_code": "KA24DE",
+    "engine_type": "unknown",
+    "price": 120000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102VK051",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176612143394_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67106",
+    "product_id": 67106,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Teana",
+    "year": null,
+    "engine_code": "VQ25DE",
+    "engine_type": "unknown",
+    "price": 35000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JN0AW",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17661209564_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67104",
+    "product_id": 67104,
+    "title": "Двигатель",
+    "make": "Hyundai",
+    "model": "Tucson",
+    "year": null,
+    "engine_code": "G4GC",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "2110123S30",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176611975058_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67101",
+    "product_id": 67101,
+    "title": "Двигатель",
+    "make": "Audi",
+    "model": "A6",
+    "year": null,
+    "engine_code": "BDW",
+    "engine_type": "unknown",
+    "price": 128000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "06E100039A",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17661179094_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67099",
+    "product_id": 67099,
+    "title": "Двигатель",
+    "make": "Audi",
+    "model": "A6",
+    "year": null,
+    "engine_code": "BPJ",
+    "engine_type": "unknown",
+    "price": 120000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "06D100033H",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176611635496_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67097",
+    "product_id": 67097,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "ASX",
+    "year": null,
+    "engine_code": "4A92",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176611445529_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67095",
+    "product_id": 67095,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "NV200",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 48000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176611345814_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67093",
+    "product_id": 67093,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Lancer",
+    "year": null,
+    "engine_code": "4A91",
+    "engine_type": "unknown",
+    "price": 50000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176611085149_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67091",
+    "product_id": 67091,
+    "title": "Двигатель",
+    "make": "Lexus",
+    "model": "ES300",
+    "year": null,
+    "engine_code": "1MZ-FE",
+    "engine_type": "unknown",
+    "price": 105000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900020570",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176610878011_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67089",
+    "product_id": 67089,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Legacy",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 95000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BN690",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176610789891_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67087",
+    "product_id": 67087,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Camry",
+    "year": null,
+    "engine_code": "2AZ-FE",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000H140",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176610721680_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67085",
+    "product_id": 67085,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Swift",
+    "year": null,
+    "engine_code": "M15A",
+    "engine_type": "unknown",
+    "price": 72000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176610689023_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67083",
+    "product_id": 67083,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Galant Fortis",
+    "year": null,
+    "engine_code": "4B10",
+    "engine_type": "unknown",
+    "price": 117000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176610599214_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67081",
+    "product_id": 67081,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Pajero Sport",
+    "year": null,
+    "engine_code": "6B31",
+    "engine_type": "unknown",
+    "price": 508000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000C739, 1000C205",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176605685275_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67077",
+    "product_id": 67077,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Belta",
+    "year": null,
+    "engine_code": "2NZ-FE",
+    "engine_type": "unknown",
+    "price": 60000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900021C60",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176605606233_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67075",
+    "product_id": 67075,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Legacy",
+    "year": null,
+    "engine_code": "EJ253",
+    "engine_type": "unknown",
+    "price": 70000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BT760",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176605576822_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67073",
+    "product_id": 67073,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Outlander",
+    "year": null,
+    "engine_code": "4B12",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000C854, 1000A945",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176605531156_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67069",
+    "product_id": 67069,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Qashqai",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 55000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JE30F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176605435991_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67067",
+    "product_id": 67067,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla Rumion",
+    "year": null,
+    "engine_code": "2ZR-FE",
+    "engine_type": "unknown",
+    "price": 95000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000T040",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176605384216_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67065",
+    "product_id": 67065,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZZ-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900022330",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176605354386_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67061",
+    "product_id": 67061,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": null,
+    "engine_code": "1ZR-FE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000T030",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176605266072_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67059",
+    "product_id": 67059,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": null,
+    "engine_code": "1AZ-FE",
+    "engine_type": "unknown",
+    "price": 130000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000H150",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176605199766_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67057",
+    "product_id": 67057,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "X-Trail",
+    "year": null,
+    "engine_code": "QR25DE",
+    "engine_type": "unknown",
+    "price": 88000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JG3AC",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176605140441_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67055",
+    "product_id": 67055,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": null,
+    "engine_code": "2AZ-FE",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "190000H132",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176604776677_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67034",
+    "product_id": 67034,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Carina ED",
+    "year": null,
+    "engine_code": "4S-FE",
+    "engine_type": "unknown",
+    "price": 150000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176549944878_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/67027",
+    "product_id": 67027,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Vitz",
+    "year": null,
+    "engine_code": "1NZ-FE",
+    "engine_type": "unknown",
+    "price": 70000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900021171",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176517511014_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66948",
+    "product_id": 66948,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Fuga",
+    "year": null,
+    "engine_code": "VQ35DE",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176239977525_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66916",
+    "product_id": 66916,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Liberty",
+    "year": null,
+    "engine_code": "QR20DE",
+    "engine_type": "unknown",
+    "price": 72000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176189584314_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66910",
+    "product_id": 66910,
+    "title": "Двигатель",
+    "make": "Volkswagen",
+    "model": "Golf",
+    "year": null,
+    "engine_code": "CAX",
+    "engine_type": "unknown",
+    "price": 49000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176154912493_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66909",
+    "product_id": 66909,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 110000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/176154915429_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66853",
+    "product_id": 66853,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Qashqai",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 45000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175930325534_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+    {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66852",
+    "product_id": 66852,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Civic",
+    "year": null,
+    "engine_code": "D17A",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175930329075_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66693",
+    "product_id": 66693,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175799859044_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66569",
+    "product_id": 66569,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Swift",
+    "year": null,
+    "engine_code": "M13A",
+    "engine_type": "unknown",
+    "price": 50000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175704690882_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66568",
+    "product_id": 66568,
+    "title": "Двигатель",
+    "make": "Audi",
+    "model": "A4",
+    "year": null,
+    "engine_code": "ALT",
+    "engine_type": "unknown",
+    "price": 60000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175704693783_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66403",
+    "product_id": 66403,
+    "title": "Двигатель",
+    "make": "Daihatsu",
+    "model": "Mira",
+    "year": null,
+    "engine_code": "KF",
+    "engine_type": "unknown",
+    "price": 28000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175575944550_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66393",
+    "product_id": 66393,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Aqua",
+    "year": null,
+    "engine_code": "1NZ-FXE",
+    "engine_type": "unknown",
+    "price": 30000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17557518934_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66286",
+    "product_id": 66286,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Estima",
+    "year": null,
+    "engine_code": "2AZ-FXE",
+    "engine_type": "unknown",
+    "price": 106000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175506496649_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66268",
+    "product_id": 66268,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 110000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175506543330_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66246",
+    "product_id": 66246,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "Bongo Brawny",
+    "year": null,
+    "engine_code": "FE-E",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175429163430_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66192",
+    "product_id": 66192,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corona",
+    "year": null,
+    "engine_code": "4S-FE",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175316789826_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66143",
+    "product_id": 66143,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Qashqai",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 50000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175280362363_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66141",
+    "product_id": 66141,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175280368066_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66039",
+    "product_id": 66039,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Fit",
+    "year": null,
+    "engine_code": "L13B",
+    "engine_type": "unknown",
+    "price": 20000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175030417454_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66037",
+    "product_id": 66037,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 108000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175029597564_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66033",
+    "product_id": 66033,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/175021067790_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/66004",
+    "product_id": 66004,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Alphard",
+    "year": null,
+    "engine_code": "2AZ-FXE",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174945235670_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/65821",
+    "product_id": 65821,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 108000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174736765253_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/65723",
+    "product_id": 65723,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 85000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BS360",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174581746991_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/65634",
+    "product_id": 65634,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174434790531_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/65633",
+    "product_id": 65633,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 108000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174434794425_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/65625",
+    "product_id": 65625,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 120000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174416146811_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64845",
+    "product_id": 64845,
+    "title": "Двигатель",
+    "make": "Bmw",
+    "model": "3-Series",
+    "year": null,
+    "engine_code": "M43B19TU",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "11001712973",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234593652_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64367",
+    "product_id": 64367,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67ce43c727618321788649_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64305",
+    "product_id": 64305,
+    "title": "Двигатель",
+    "make": "Citroen",
+    "model": "C3",
+    "year": null,
+    "engine_code": "HMZ",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17421910365_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64303",
+    "product_id": 64303,
+    "title": "Двигатель",
+    "make": "Jaguar",
+    "model": "XJ",
+    "year": null,
+    "engine_code": "AJ-V8",
+    "engine_type": "unknown",
+    "price": 150000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17428892726_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64301",
+    "product_id": 64301,
+    "title": "Двигатель",
+    "make": "Bmw",
+    "model": "3-Series",
+    "year": null,
+    "engine_code": "N46B20",
+    "engine_type": "unknown",
+    "price": 67000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "11000430928",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174288916444_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64299",
+    "product_id": 64299,
+    "title": "Двигатель",
+    "make": "Bmw",
+    "model": "3-Series",
+    "year": null,
+    "engine_code": "N46B20",
+    "engine_type": "unknown",
+    "price": 67000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "11000430932",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174288923250_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64297",
+    "product_id": 64297,
+    "title": "Двигатель",
+    "make": "Volkswagen",
+    "model": "Golf",
+    "year": null,
+    "engine_code": "CBZA",
+    "engine_type": "unknown",
+    "price": 53000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234564796_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64295",
+    "product_id": 64295,
+    "title": "Двигатель",
+    "make": "Volkswagen",
+    "model": "UP",
+    "year": null,
+    "engine_code": "CHY",
+    "engine_type": "unknown",
+    "price": 24000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219088068_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64293",
+    "product_id": 64293,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Colt",
+    "year": null,
+    "engine_code": "4G15T",
+    "engine_type": "unknown",
+    "price": 45000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000C493",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219080287_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64291",
+    "product_id": 64291,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "MPV",
+    "year": null,
+    "engine_code": "GY-DE",
+    "engine_type": "unknown",
+    "price": 53000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "GYY1-E5-00XA",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234568916_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64289",
+    "product_id": 64289,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "Axela",
+    "year": null,
+    "engine_code": "ZY-VE",
+    "engine_type": "unknown",
+    "price": 27000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174245568427_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+    {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64287",
+    "product_id": 64287,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "Axela",
+    "year": null,
+    "engine_code": "ZY-VE",
+    "engine_type": "unknown",
+    "price": 27000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "ZY51-02-300D",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219044941_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64285",
+    "product_id": 64285,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "RX-8",
+    "year": null,
+    "engine_code": "13B-MSP",
+    "engine_type": "unknown",
+    "price": 140000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "N3H3-02-200",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174288902338_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64283",
+    "product_id": 64283,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "RX-8",
+    "year": null,
+    "engine_code": "13B-MSP",
+    "engine_type": "unknown",
+    "price": 140000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "N3H3-02-200",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234598710_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64281",
+    "product_id": 64281,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "Demio",
+    "year": null,
+    "engine_code": "B3-ME",
+    "engine_type": "unknown",
+    "price": 43000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "B32F-02-300A",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174288924215_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64279",
+    "product_id": 64279,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "Atenza",
+    "year": null,
+    "engine_code": "LF-DE",
+    "engine_type": "unknown",
+    "price": 92000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "LF78-02-300B",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174245592915_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64277",
+    "product_id": 64277,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ203",
+    "engine_type": "unknown",
+    "price": 42000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BM540",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174245602990_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64275",
+    "product_id": 64275,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Legacy",
+    "year": null,
+    "engine_code": "EJ20X",
+    "engine_type": "unknown",
+    "price": 58000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BR670",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174288911621_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64274",
+    "product_id": 64274,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Exiga",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 65000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BV170",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174245578917_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64273",
+    "product_id": 64273,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Impreza",
+    "year": null,
+    "engine_code": "EL154",
+    "engine_type": "unknown",
+    "price": 35000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BT580",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174237209472_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64272",
+    "product_id": 64272,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Impreza",
+    "year": null,
+    "engine_code": "EL154",
+    "engine_type": "unknown",
+    "price": 37000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BS180",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174237212123_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64270",
+    "product_id": 64270,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Jimny",
+    "year": null,
+    "engine_code": "K6A",
+    "engine_type": "unknown",
+    "price": 110000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219055525_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64268",
+    "product_id": 64268,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Jimny",
+    "year": null,
+    "engine_code": "K6A",
+    "engine_type": "unknown",
+    "price": 65000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234588399_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64266",
+    "product_id": 64266,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Stepwgn",
+    "year": null,
+    "engine_code": "R20A",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219066793_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64264",
+    "product_id": 64264,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Stepwgn",
+    "year": null,
+    "engine_code": "R20A",
+    "engine_type": "unknown",
+    "price": 25000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234573976_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64262",
+    "product_id": 64262,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Stepwgn",
+    "year": null,
+    "engine_code": "R20A",
+    "engine_type": "unknown",
+    "price": 25000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174237186045_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64260",
+    "product_id": 64260,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Stepwgn",
+    "year": null,
+    "engine_code": "R20A",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219049446_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64258",
+    "product_id": 64258,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Stepwgn",
+    "year": null,
+    "engine_code": "R20A",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174245582161_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64256",
+    "product_id": 64256,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Stepwgn",
+    "year": null,
+    "engine_code": "R20A",
+    "engine_type": "unknown",
+    "price": 25000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174237195795_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64254",
+    "product_id": 64254,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Odyssey",
+    "year": null,
+    "engine_code": "K24A",
+    "engine_type": "unknown",
+    "price": 85000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219112853_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64252",
+    "product_id": 64252,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Airwave",
+    "year": null,
+    "engine_code": "L15A",
+    "engine_type": "unknown",
+    "price": 25000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234579119_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64250",
+    "product_id": 64250,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Fit",
+    "year": null,
+    "engine_code": "LDA",
+    "engine_type": "unknown",
+    "price": 15000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219092823_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64245",
+    "product_id": 64245,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Elgrand",
+    "year": null,
+    "engine_code": "VQ25DE",
+    "engine_type": "unknown",
+    "price": 25000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102WL7A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219084913_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64232",
+    "product_id": 64232,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Teana",
+    "year": null,
+    "engine_code": "VQ25DE",
+    "engine_type": "unknown",
+    "price": 33000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JN0A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234560413_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64230",
+    "product_id": 64230,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Teana",
+    "year": null,
+    "engine_code": "VQ25DE",
+    "engine_type": "unknown",
+    "price": 33000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JN0A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219071958_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64222",
+    "product_id": 64222,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Bluebird Sylphy",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102EW0A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234583967_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64220",
+    "product_id": 64220,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Lafesta",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102EN1A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174237200315_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64218",
+    "product_id": 64218,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Lafesta",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102EN0AA",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174245588057_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64216",
+    "product_id": 64216,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Serena",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102CY0A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174245597783_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64214",
+    "product_id": 64214,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Serena",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 34000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102CY0A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174245574183_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64212",
+    "product_id": 64212,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Serena",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102CY0A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219075783_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64210",
+    "product_id": 64210,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Serena",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101021GKAA",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174237204895_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+    {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64208",
+    "product_id": 64208,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Serena",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101021GKAA",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17421906160_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64206",
+    "product_id": 64206,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Serena",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102EN0AB",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234608093_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64204",
+    "product_id": 64204,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Serena",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101021GKAA",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219098612_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64202",
+    "product_id": 64202,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Serena",
+    "year": null,
+    "engine_code": "SR20DE",
+    "engine_type": "unknown",
+    "price": 70000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101023C2M0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174288906725_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64200",
+    "product_id": 64200,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "NV200",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 57000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JX00F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234603747_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64198",
+    "product_id": 64198,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "NV200",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 50000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JX00F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17423721708_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64196",
+    "product_id": 64196,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Juke",
+    "year": null,
+    "engine_code": "MR16DDT",
+    "engine_type": "unknown",
+    "price": 87000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101021KC2B",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174234612175_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64195",
+    "product_id": 64195,
+    "title": "Двигатель",
+    "make": "Daihatsu",
+    "model": "Terios Kid",
+    "year": null,
+    "engine_code": "EF-DET",
+    "engine_type": "unknown",
+    "price": 50000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174219108369_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64192",
+    "product_id": 64192,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Wish",
+    "year": null,
+    "engine_code": "1AZ-FSE",
+    "engine_type": "unknown",
+    "price": 44000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900028330",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174237191270_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/64092",
+    "product_id": 64092,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Murano",
+    "year": null,
+    "engine_code": "VQ35DE",
+    "engine_type": "unknown",
+    "price": 240000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/679b2f1e7a355407287173_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63280",
+    "product_id": 63280,
+    "title": "Двигатель",
+    "make": "Porsche",
+    "model": "Cayenne",
+    "year": null,
+    "engine_code": "M55.01",
+    "engine_type": "unknown",
+    "price": 175000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a2c8a36f0d100468699_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63278",
+    "product_id": 63278,
+    "title": "Двигатель",
+    "make": "Volvo",
+    "model": "V60",
+    "year": null,
+    "engine_code": "B4204T11",
+    "engine_type": "unknown",
+    "price": 165000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "36013573",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173500310986_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63276",
+    "product_id": 63276,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Pajero Mini",
+    "year": null,
+    "engine_code": "4A30",
+    "engine_type": "unknown",
+    "price": 22000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000C461",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a107941045855318787_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63032",
+    "product_id": 63032,
+    "title": "Двигатель",
+    "make": "Renault",
+    "model": "Kangoo",
+    "year": null,
+    "engine_code": "K4M 706; K4M 750; K4",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173500654187_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63030",
+    "product_id": 63030,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Pajero Mini",
+    "year": null,
+    "engine_code": "4A30",
+    "engine_type": "unknown",
+    "price": 22000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "MD975568",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173500648696_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63025",
+    "product_id": 63025,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "Titan",
+    "year": null,
+    "engine_code": "FE-E",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "FF59-02-300",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a1ce78b200237842312_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63023",
+    "product_id": 63023,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Impreza",
+    "year": null,
+    "engine_code": "EJ152",
+    "engine_type": "unknown",
+    "price": 33000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BN160",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a1d028bd26242735600_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63021",
+    "product_id": 63021,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Exiga",
+    "year": null,
+    "engine_code": "EJ205",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BS370",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a1afe40d78321548487_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63019",
+    "product_id": 63019,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ205",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BR950",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a1d1964b93598453022_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63017",
+    "product_id": 63017,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Jimny",
+    "year": null,
+    "engine_code": "K6A",
+    "engine_type": "unknown",
+    "price": 65000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a0d2ee6a25526910382_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63015",
+    "product_id": 63015,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Wagon R",
+    "year": null,
+    "engine_code": "K6A",
+    "engine_type": "unknown",
+    "price": 30000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173500309057_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63013",
+    "product_id": 63013,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Fit Shuttle",
+    "year": null,
+    "engine_code": "LDA",
+    "engine_type": "unknown",
+    "price": 19000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173500651121_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63011",
+    "product_id": 63011,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Fit Shuttle",
+    "year": null,
+    "engine_code": "LDA",
+    "engine_type": "unknown",
+    "price": 19000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a1b636d1a0607270351_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63010",
+    "product_id": 63010,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Leaf",
+    "year": null,
+    "engine_code": "EM57",
+    "engine_type": "unknown",
+    "price": 30000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "290A03NF0A, 320103NF",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a0d14652ef830573346_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63008",
+    "product_id": 63008,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "AD",
+    "year": null,
+    "engine_code": "QG13DE",
+    "engine_type": "unknown",
+    "price": 28000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101028N030",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a1cb50bcaf757059059_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63006",
+    "product_id": 63006,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "March",
+    "year": null,
+    "engine_code": "HR12DE",
+    "engine_type": "unknown",
+    "price": 23000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101021HJ4W",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173500299648_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63004",
+    "product_id": 63004,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "AD",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 55000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JJ40F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a1c0b91865785000038_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63002",
+    "product_id": 63002,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Bluebird Sylphy",
+    "year": null,
+    "engine_code": "QG18DE",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102WA990",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173500302183_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/63000",
+    "product_id": 63000,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "NV200",
+    "year": null,
+    "engine_code": "HR16DE",
+    "engine_type": "unknown",
+    "price": 60000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JX00F",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173500667478_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62998",
+    "product_id": 62998,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Dualis",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 50000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JE0AA",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173500297156_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62996",
+    "product_id": 62996,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Cami",
+    "year": null,
+    "engine_code": "HC-EJ",
+    "engine_type": "unknown",
+    "price": 170000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a1c37146df086156102_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62994",
+    "product_id": 62994,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Rush",
+    "year": null,
+    "engine_code": "3SZ-VE",
+    "engine_type": "unknown",
+    "price": 120000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "19000B1Q51",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676a1c60aedb9848226974_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+    {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62992",
+    "product_id": 62992,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Probox",
+    "year": null,
+    "engine_code": "1NZ-FE",
+    "engine_type": "unknown",
+    "price": 85000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900021631",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676b53d888b01093182957_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62990",
+    "product_id": 62990,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Probox",
+    "year": null,
+    "engine_code": "1NZ-FE",
+    "engine_type": "unknown",
+    "price": 85000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900021631",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173508645680_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62971",
+    "product_id": 62971,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Probox",
+    "year": null,
+    "engine_code": "1NZ-FE",
+    "engine_type": "unknown",
+    "price": 85000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900021631",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/676b53653ee97551262094_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62365",
+    "product_id": 62365,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Impreza",
+    "year": null,
+    "engine_code": "EJ152",
+    "engine_type": "unknown",
+    "price": 35000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BD040",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173372668691_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62314",
+    "product_id": 62314,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Moco",
+    "year": null,
+    "engine_code": "K6A",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67569218322b8922466869_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62311",
+    "product_id": 62311,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Stepwgn",
+    "year": null,
+    "engine_code": "K20A",
+    "engine_type": "unknown",
+    "price": 28000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173371143977_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62309",
+    "product_id": 62309,
+    "title": "Двигатель",
+    "make": "Mitsubishi",
+    "model": "Pajero Mini",
+    "year": null,
+    "engine_code": "4A30",
+    "engine_type": "unknown",
+    "price": 23000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1000C482",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17339032387_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62305",
+    "product_id": 62305,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Legacy",
+    "year": null,
+    "engine_code": "EJ253",
+    "engine_type": "unknown",
+    "price": 67000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BS880",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6753ded92b8a6957471467_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62302",
+    "product_id": 62302,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Legacy",
+    "year": null,
+    "engine_code": "EJ253",
+    "engine_type": "unknown",
+    "price": 80000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BS880",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6753dc3bb51c9037787078_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62301",
+    "product_id": 62301,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "Demio",
+    "year": null,
+    "engine_code": "P3-VPS",
+    "engine_type": "unknown",
+    "price": 19000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6753da977a716655558206_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62299",
+    "product_id": 62299,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Chevrolet Cruze",
+    "year": null,
+    "engine_code": "--",
+    "engine_type": "unknown",
+    "price": 70000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6753d7f2e07b7163982473_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62298",
+    "product_id": 62298,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Stream",
+    "year": null,
+    "engine_code": "R20A",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173354592238_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62297",
+    "product_id": 62297,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Sambar Truck",
+    "year": null,
+    "engine_code": "EN07",
+    "engine_type": "unknown",
+    "price": 30000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100KJ150",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6753d592017bb703552105_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62296",
+    "product_id": 62296,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Stream",
+    "year": null,
+    "engine_code": "R18A",
+    "engine_type": "unknown",
+    "price": 48000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6753d43a99aa7106717596_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62254",
+    "product_id": 62254,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Legacy",
+    "year": null,
+    "engine_code": "EJ253",
+    "engine_type": "unknown",
+    "price": 67000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BS880",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67528a55895ae610541009_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62252",
+    "product_id": 62252,
+    "title": "Двигатель",
+    "make": "Jaguar",
+    "model": "XJ",
+    "year": null,
+    "engine_code": "AJ8FT",
+    "engine_type": "unknown",
+    "price": 145000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/675288e39939c695490667_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62247",
+    "product_id": 62247,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Fit",
+    "year": null,
+    "engine_code": "LDA",
+    "engine_type": "unknown",
+    "price": 19000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173345702252_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62244",
+    "product_id": 62244,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Accord",
+    "year": null,
+    "engine_code": "K24A",
+    "engine_type": "unknown",
+    "price": 110000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173345699618_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62243",
+    "product_id": 62243,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Wagon R",
+    "year": null,
+    "engine_code": "K6A",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6752829608376522795952_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62242",
+    "product_id": 62242,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Impreza",
+    "year": null,
+    "engine_code": "EL154",
+    "engine_type": "unknown",
+    "price": 37000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BT580",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6752808f3cd62757081100_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62240",
+    "product_id": 62240,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Elysion",
+    "year": null,
+    "engine_code": "J35A",
+    "engine_type": "unknown",
+    "price": 155000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67527709e3b84273706047_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62238",
+    "product_id": 62238,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Swift",
+    "year": null,
+    "engine_code": "M13A",
+    "engine_type": "unknown",
+    "price": 43000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/675275d96b089309124032_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62237",
+    "product_id": 62237,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Stepwgn",
+    "year": null,
+    "engine_code": "K20A",
+    "engine_type": "unknown",
+    "price": 36000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173345680219_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62206",
+    "product_id": 62206,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Fit",
+    "year": null,
+    "engine_code": "LDA",
+    "engine_type": "unknown",
+    "price": 13000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173335542227_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62204",
+    "product_id": 62204,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Fit",
+    "year": null,
+    "engine_code": "L13A",
+    "engine_type": "unknown",
+    "price": 25000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6750f23e2338a601752285_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62202",
+    "product_id": 62202,
+    "title": "Двигатель",
+    "make": "Citroen",
+    "model": "Ds5",
+    "year": null,
+    "engine_code": "EP6CDTMD",
+    "engine_type": "unknown",
+    "price": 110000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1608730180",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6750ec0ae6982674047755_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62201",
+    "product_id": 62201,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Moco",
+    "year": null,
+    "engine_code": "K6A",
+    "engine_type": "unknown",
+    "price": 35000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67501787c8f1c942488833_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62199",
+    "product_id": 62199,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Fit",
+    "year": null,
+    "engine_code": "L13A",
+    "engine_type": "unknown",
+    "price": 26000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173329880370_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62197",
+    "product_id": 62197,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Legacy",
+    "year": null,
+    "engine_code": "EJ253",
+    "engine_type": "unknown",
+    "price": 85000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BS880",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6750141118166590011532_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62195",
+    "product_id": 62195,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "Premacy",
+    "year": null,
+    "engine_code": "L3-VE",
+    "engine_type": "unknown",
+    "price": 55000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "L3K2-02-300E",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173329869378_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62193",
+    "product_id": 62193,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Legacy",
+    "year": null,
+    "engine_code": "EJ204",
+    "engine_type": "unknown",
+    "price": 70000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BM140",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173329868870_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62192",
+    "product_id": 62192,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Legacy",
+    "year": null,
+    "engine_code": "EJ253",
+    "engine_type": "unknown",
+    "price": 67000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BS880",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17332986476_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+    {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62172",
+    "product_id": 62172,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Impreza",
+    "year": null,
+    "engine_code": "EJ203",
+    "engine_type": "unknown",
+    "price": 43000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BP810",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/674fcaac247b6706474339_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62168",
+    "product_id": 62168,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Impreza",
+    "year": null,
+    "engine_code": "EL154",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BT580",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/674fc8f9d20bb051522719_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62135",
+    "product_id": 62135,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Fit",
+    "year": null,
+    "engine_code": "L13B",
+    "engine_type": "unknown",
+    "price": 12000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173327621336_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/62119",
+    "product_id": 62119,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Fit",
+    "year": null,
+    "engine_code": "LDA",
+    "engine_type": "unknown",
+    "price": 19000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17332761836_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61162",
+    "product_id": 61162,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Leaf",
+    "year": null,
+    "engine_code": "EM57",
+    "engine_type": "unknown",
+    "price": 30000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "290A03NF0A, 320103NF",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6753d35dbc54e255134189_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61160",
+    "product_id": 61160,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Bluebird Sylphy",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 35000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102EW0A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6753d29d05ca7906925054_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61158",
+    "product_id": 61158,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Atlas",
+    "year": null,
+    "engine_code": "QD32",
+    "engine_type": "unknown",
+    "price": 235000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101026T310",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173329872538_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61154",
+    "product_id": 61154,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Bluebird Sylphy",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 42000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102EW0A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/675656b612a3d266571321_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61152",
+    "product_id": 61152,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Dualis",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JE0AA",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6753d26ba9892365423112_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61150",
+    "product_id": 61150,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Cima",
+    "year": null,
+    "engine_code": "VK45DE",
+    "engine_type": "unknown",
+    "price": 155000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102AT3A0, 3102091X",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173872354786_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61149",
+    "product_id": 61149,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Elgrand",
+    "year": null,
+    "engine_code": "VQ35DE",
+    "engine_type": "unknown",
+    "price": 64000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102WL5A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174918759472_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61147",
+    "product_id": 61147,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Serena",
+    "year": null,
+    "engine_code": "SR20DE",
+    "engine_type": "unknown",
+    "price": 37000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101025U5M0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173372674959_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61145",
+    "product_id": 61145,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Wingroad",
+    "year": null,
+    "engine_code": "QG15DE",
+    "engine_type": "unknown",
+    "price": 42000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101028N250",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67569253587da009604842_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61144",
+    "product_id": 61144,
+    "title": "Двигатель",
+    "make": "Daihatsu",
+    "model": "Terios Kid",
+    "year": null,
+    "engine_code": "EF-DET",
+    "engine_type": "unknown",
+    "price": 55000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6756568c3b4a5015655491_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61143",
+    "product_id": 61143,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Vista",
+    "year": null,
+    "engine_code": "1AZ-FSE",
+    "engine_type": "unknown",
+    "price": 45000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900028150",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67565700bbdb5131206886_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61142",
+    "product_id": 61142,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Voxy",
+    "year": null,
+    "engine_code": "3ZR-FE",
+    "engine_type": "unknown",
+    "price": 45000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900037290",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173327628079_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61141",
+    "product_id": 61141,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Noah",
+    "year": null,
+    "engine_code": "3ZR-FE",
+    "engine_type": "unknown",
+    "price": 45000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900037290",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173372670251_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61140",
+    "product_id": 61140,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Voxy",
+    "year": null,
+    "engine_code": "3ZR-FAE",
+    "engine_type": "unknown",
+    "price": 45000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900037362",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17334569073_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61139",
+    "product_id": 61139,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Noah",
+    "year": null,
+    "engine_code": "3ZR-FAE",
+    "engine_type": "unknown",
+    "price": 42000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900037300",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/675282c31b853574560254_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61137",
+    "product_id": 61137,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Sai",
+    "year": null,
+    "engine_code": "2AZ-FXE",
+    "engine_type": "unknown",
+    "price": 115000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900028C00",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67500a01162f4243367984_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61135",
+    "product_id": 61135,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Corona",
+    "year": null,
+    "engine_code": "4S-FE",
+    "engine_type": "unknown",
+    "price": 120000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900074301",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6752753234930638128322_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61133",
+    "product_id": 61133,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Alphard",
+    "year": null,
+    "engine_code": "2AZ-FXE",
+    "engine_type": "unknown",
+    "price": 95000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900028230",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174770438547_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61132",
+    "product_id": 61132,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "iQ",
+    "year": null,
+    "engine_code": "1NR-FE",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900047100",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6756922ae4cf6554252710_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61130",
+    "product_id": 61130,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Ractis",
+    "year": null,
+    "engine_code": "1NR-FE",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900047160",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173345694023_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61128",
+    "product_id": 61128,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Ractis",
+    "year": null,
+    "engine_code": "1NR-FE",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900047160",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67500aab4b88c739073722_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61127",
+    "product_id": 61127,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Spade",
+    "year": null,
+    "engine_code": "1NR-FE",
+    "engine_type": "unknown",
+    "price": 37000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900047210",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67527665d541f564269353_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/61125",
+    "product_id": 61125,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Prius",
+    "year": null,
+    "engine_code": "1NZ-FXE",
+    "engine_type": "unknown",
+    "price": 55000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900021081",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173335539846_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59763",
+    "product_id": 59763,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Prius",
+    "year": null,
+    "engine_code": "2ZR-FXE",
+    "engine_type": "unknown",
+    "price": 65000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900037470",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/673701f2bf1ce045025140_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59668",
+    "product_id": 59668,
+    "title": "Двигатель",
+    "make": "Bmw",
+    "model": "Z4",
+    "year": null,
+    "engine_code": "M54B25",
+    "engine_type": "unknown",
+    "price": 125000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "11000140992",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6735628e22065705752410_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59644",
+    "product_id": 59644,
+    "title": "Двигатель",
+    "make": "Volkswagen",
+    "model": "Polo",
+    "year": null,
+    "engine_code": "CBZ",
+    "engine_type": "unknown",
+    "price": 60000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173154762666_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+    {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59627",
+    "product_id": 59627,
+    "title": "Двигатель",
+    "make": "Suzuki",
+    "model": "Kizashi",
+    "year": null,
+    "engine_code": "J24B",
+    "engine_type": "unknown",
+    "price": 205000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/673442587d5c8565003113_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59623",
+    "product_id": 59623,
+    "title": "Двигатель",
+    "make": "Citroen",
+    "model": "C5",
+    "year": null,
+    "engine_code": "EP6CDT",
+    "engine_type": "unknown",
+    "price": 100000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/17314769417_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59564",
+    "product_id": 59564,
+    "title": "Двигатель",
+    "make": "Ford",
+    "model": "Explorer",
+    "year": null,
+    "engine_code": "Triton V8",
+    "engine_type": "unknown",
+    "price": 150000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "6L2Z-6007-BA",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173147712565_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59562",
+    "product_id": 59562,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "MPV",
+    "year": null,
+    "engine_code": "L3-VDT",
+    "engine_type": "unknown",
+    "price": 150000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "L33E-02-300C",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173154783621_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59560",
+    "product_id": 59560,
+    "title": "Двигатель",
+    "make": "Mazda",
+    "model": "Titan",
+    "year": null,
+    "engine_code": "WL",
+    "engine_type": "unknown",
+    "price": 150000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "WLA2-02-300E",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/673442c605288567107366_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59558",
+    "product_id": 59558,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ205",
+    "engine_type": "unknown",
+    "price": 75000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BR950",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6735581916b70098685431_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59556",
+    "product_id": 59556,
+    "title": "Двигатель",
+    "make": "Subaru",
+    "model": "Forester",
+    "year": null,
+    "engine_code": "EJ205",
+    "engine_type": "unknown",
+    "price": 95000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10100BT200",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173154752728_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59554",
+    "product_id": 59554,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Freed",
+    "year": null,
+    "engine_code": "LEA",
+    "engine_type": "unknown",
+    "price": 18000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67355747bf96e282139086_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59552",
+    "product_id": 59552,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "Acty Truck",
+    "year": null,
+    "engine_code": "E07Z",
+    "engine_type": "unknown",
+    "price": 30000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6735571bdc9bf621033201_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59547",
+    "product_id": 59547,
+    "title": "Двигатель",
+    "make": "Honda",
+    "model": "N-WGN",
+    "year": null,
+    "engine_code": "S07A",
+    "engine_type": "unknown",
+    "price": 14000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6735569744460484448206_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59534",
+    "product_id": 59534,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Teana",
+    "year": null,
+    "engine_code": "QR25DE",
+    "engine_type": "unknown",
+    "price": 70000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "101029Y0A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173147699877_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59528",
+    "product_id": 59528,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Stagea",
+    "year": null,
+    "engine_code": "VQ25DET",
+    "engine_type": "unknown",
+    "price": 76000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102AQ8A6",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173147697288_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59526",
+    "product_id": 59526,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Wingroad",
+    "year": null,
+    "engine_code": "HR15DE",
+    "engine_type": "unknown",
+    "price": 22000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102ED090",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6735565f234ac139186229_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59524",
+    "product_id": 59524,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Atlas",
+    "year": null,
+    "engine_code": "TD27",
+    "engine_type": "unknown",
+    "price": 195000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/673555de849cb506333827_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59522",
+    "product_id": 59522,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Vanette",
+    "year": null,
+    "engine_code": "R2",
+    "engine_type": "unknown",
+    "price": 140000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102HA410",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67344334c1c02102945973_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59521",
+    "product_id": 59521,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Leaf",
+    "year": null,
+    "engine_code": "EM57",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "290A03NF3A, 320103NF",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6732d04fae04f696936380_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59520",
+    "product_id": 59520,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Leaf",
+    "year": null,
+    "engine_code": "EM57",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "290A03NF0A, 320103NF",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173138316887_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59519",
+    "product_id": 59519,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Leaf",
+    "year": null,
+    "engine_code": "EM57",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "290A03NF0A, 320103NF",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173138314917_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59518",
+    "product_id": 59518,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Leaf",
+    "year": null,
+    "engine_code": "EM57",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "290A03NF0A, 320103NF",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173138311527_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59517",
+    "product_id": 59517,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Leaf",
+    "year": null,
+    "engine_code": "EM57",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "290A03NF0A, 320103NF",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6732cfdab4f3f670083350_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59516",
+    "product_id": 59516,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Leaf",
+    "year": null,
+    "engine_code": "EM57",
+    "engine_type": "unknown",
+    "price": 40000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "290A03NF0A, 320103NF",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6732cfb145ef1280562047_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59439",
+    "product_id": 59439,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Fuga",
+    "year": null,
+    "engine_code": "VQ35DE",
+    "engine_type": "unknown",
+    "price": 135000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102CG7A0",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173147710846_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59433",
+    "product_id": 59433,
+    "title": "Двигатель",
+    "make": "Nissan",
+    "model": "Dualis",
+    "year": null,
+    "engine_code": "MR20DE",
+    "engine_type": "unknown",
+    "price": 45000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "10102JE0AA",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/673555a7513e2000147551_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59408",
+    "product_id": 59408,
+    "title": "Двигатель",
+    "make": "Daihatsu",
+    "model": "Atrai",
+    "year": null,
+    "engine_code": "KF-DET",
+    "engine_type": "unknown",
+    "price": 77000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173154778613_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59406",
+    "product_id": 59406,
+    "title": "Двигатель",
+    "make": "Daihatsu",
+    "model": "Tanto",
+    "year": null,
+    "engine_code": "KF",
+    "engine_type": "unknown",
+    "price": 25000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": null,
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173154773159_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59404",
+    "product_id": 59404,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Windom",
+    "year": null,
+    "engine_code": "1MZ-FE",
+    "engine_type": "unknown",
+    "price": 112000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900020380",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/174553932973_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59400",
+    "product_id": 59400,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Estima Emina",
+    "year": null,
+    "engine_code": "2TZ-FE",
+    "engine_type": "unknown",
+    "price": 107000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900076100",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67355411c836b186009090_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59337",
+    "product_id": 59337,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Prius",
+    "year": null,
+    "engine_code": "2ZR-FXE",
+    "engine_type": "unknown",
+    "price": 65000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900037470",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/173147689790_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59336",
+    "product_id": 59336,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Aristo",
+    "year": null,
+    "engine_code": "2JZ-GE",
+    "engine_type": "unknown",
+    "price": 260000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900046480, 350003F5",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/67a2f96c821cc619347055_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59334",
+    "product_id": 59334,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Wish",
+    "year": null,
+    "engine_code": "2ZR-FAE",
+    "engine_type": "unknown",
+    "price": 60000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900037490",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/673553e6a5fc4045656942_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59320",
+    "product_id": 59320,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Probox",
+    "year": null,
+    "engine_code": "1NZ-FE",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900021631",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/6734406b22f81882940521_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+  {
+    "source": "mysakura",
+    "source_url": "https://mysakura.ru/product/59318",
+    "product_id": 59318,
+    "title": "Двигатель",
+    "make": "Toyota",
+    "model": "Probox",
+    "year": null,
+    "engine_code": "1NZ-FE",
+    "engine_type": "unknown",
+    "price": 90000,
+    "currency": "RUB",
+    "stock_text": "В наличии",
+    "oem": "1900021631",
+    "description": null,
+    "images": [
+      "https://storage.yandexcloud.net/mysakura/673440333de3d521103283_p470.jpg?response-content-type=image%2Fjpg&response-cache-control=public%2C+max-age%3D31536000"
+    ]
+  },
+
 ];
+
