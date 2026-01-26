@@ -38,8 +38,7 @@ body
 
   .was-validated .form-check-input:invalid
     background: $error-color
-  .form-check-input.is-invalid~.form-check-label, .was-validated .form-check-input:invalid~.form-check-label
-    color: $primary-color
+  
 
   .was-validated .form-check-input:valid~.form-check-label 
     color: $primary-color
@@ -51,6 +50,7 @@ body
   .call-trigger
 
     transition: .5s
+    z-index: 1500
 
     button
       background: transparent

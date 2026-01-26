@@ -94,8 +94,10 @@ callTriggerPosition();
 
 // send messages
 function sendToMessenger(messenger, vin) {
-  // Если VIN есть - отправляем сообщение про VIN
-  // Если VIN нет (клик по телефону) - отправляем общее сообщение
+  if (messenger === "tel") {
+    window.location.href = "tel:+79874453508";
+    return;
+  }
   let message;
 
   if (vin) {

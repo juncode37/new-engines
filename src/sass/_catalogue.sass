@@ -72,14 +72,23 @@
     button
       border-radius: 0
 
+      &:focus
+        box-shadow: none
+
   &__sidebar-accept
     background: $accent-color
     color: $primary-color
+    font-weight: 600
+    &:hover
+      color: $secondary-color
   &__sidebar-reset
     background: none
     color: $primary-color
     border: 1px solid $secondary-color
     color: $secondary-color
+
+    &:hover
+      color: $accent-color
 
   &__callback-form
     background-color: $accent-color
@@ -87,6 +96,9 @@
     button
       background: $primary-color
       color: $secondary-color
+
+      &:hover
+        color: $accent-color
 
 .catalogue
   &__content
@@ -173,6 +185,7 @@
     font-size: 0.75rem
     font-weight: 600
     text-transform: uppercase
+    z-index: 200
 
     &--sold
       background-color: $text-secondary
@@ -226,6 +239,11 @@
   &__price
     font-size: 1.5rem
     font-weight: 700
+    color: $accent-color
+    text-align: center
+
+  small
+    font-size: 14px
     color: $accent-color
     text-align: center
 

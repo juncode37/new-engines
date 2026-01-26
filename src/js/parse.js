@@ -5,31 +5,24 @@ function parseEngines() {
 
   cards.forEach(card => {
     try {
-      // Базовая информация
       const productId = card.getAttribute('data-key');
       if (!productId) return;
       
       const link = card.querySelector('a[href^="/product/"]');
       const productUrl = link ? 'https://mysakura.ru' + link.getAttribute('href') : null;
       
-      // Цена - ПЕРВАЯ ПРОВЕРКА!
       const priceElement = card.querySelector('[itemprop="price"]');
       const price = priceElement ? parseInt(priceElement.getAttribute('content')) : null;
       
-      // КРИТИЧНО: Если нет цены - ПРОПУСКАЕМ!
       if (!price || price === 0) return;
       
-      // Изображения
       const imgElement = card.querySelector('.catalog-card-img');
       const mainImage = imgElement ? imgElement.getAttribute('src') : null;
       
-      // КРИТИЧНО: Если нет картинки или blank.png - ПРОПУСКАЕМ!
       if (!mainImage || mainImage.includes('blank.png') || mainImage.includes('/imgs/')) return;
       
-      // Название
       const title = card.querySelector('[itemprop="name"]')?.textContent.trim() || 'Двигатель';
       
-      // Характеристики
       const specs = card.querySelectorAll('.product-spec-row');
       let make = '';
       let model = '';
@@ -53,13 +46,10 @@ function parseEngines() {
         }
       });
       
-      // КРИТИЧНО: Если нет марки, модели или кода - ПРОПУСКАЕМ!
       if (!make || !model || !engineCode) return;
       
-      // Статус
       const stockText = card.querySelector('.product-spec-value[title="Контракт"]') ? 'В наличии' : null;
       
-      // Собираем объект
       const engine = {
         source: 'mysakura',
         source_url: productUrl,
@@ -82,7 +72,6 @@ function parseEngines() {
       
     } catch (error) {
       console.warn('Ошибка при обработке карточки:', error);
-      // Пропускаем проблемную карточку
     }
   });
 
@@ -92,7 +81,6 @@ function parseEngines() {
 // Парсим текущую страницу
 const enginesData = parseEngines();
 
-// Выводим результат
 console.log('✅ Найдено ВАЛИДНЫХ двигателей:', enginesData.length);
 console.log('📊 Первые 3 товара:', enginesData.slice(0, 3));
 
@@ -106,6 +94,16 @@ if (invalid.length > 0) {
   console.error('❌ НАЙДЕНЫ НЕВАЛИДНЫЕ ТОВАРЫ:', invalid);
 } else {
   console.log('✅ ВСЕ ТОВАРЫ ВАЛИДНЫ!');
-  copy(JSON.stringify(enginesData, null, 2));
-  console.log('✅ Данные скопированы в буфер обмена!');
+  
+  // ФОРМАТ ДЛЯ ПРЯМОЙ ВСТАВКИ В МАССИВ
+  const jsonString = JSON.stringify(enginesData, null, 2);
+  
+  // Убираем квадратные скобки массива, оставляем только объекты
+  const objectsOnly = jsonString
+    .replace(/^\[\n/, '')  // Убираем начало массива
+    .replace(/\n\]$/, ''); // Убираем конец массива
+  
+  copy(objectsOnly);
+  console.log('✅ Данные скопированы! Просто вставьте их в конец вашего массива через запятую');
+  console.log('Пример: const enginesData = [ ...старые данные, СЮДА_ВСТАВИТЬ ];');
 }
