@@ -513,7 +513,7 @@ function renderProductCard(product) {
           </ul>
            <div class="product-card__price">
             ${formattedPrice} ₽</div>
-            <small>Цена указана приблизительно. Точную цену уточнйте у менеджера</small>
+            <small>Актуальную цену уточняйте у менеджера</small>
            
         </div>
         <div class="product-card__footer">
