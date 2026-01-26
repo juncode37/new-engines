@@ -43,7 +43,7 @@
 
       button
         background: $accent-color
-        color: $primary-color 
+        color: $primary-color
         border-radius: 0
         font-weight: 600
 
@@ -68,7 +68,6 @@
     background-color: $tertiary-color
     height: fit-content
     position: sticky
-    
 
     button
       border-radius: 0
@@ -130,15 +129,34 @@
     height: 200px
     overflow: hidden
     background-color: $bg-light
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__loader
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 1
+
+    img
+      width: 50px
+      height: 50px
 
   &__img
+    position: relative
+    z-index: 2
     width: 100%
     height: 100%
     object-fit: cover
     transition: transform 0.3s ease
+
     @media (max-width: 768px)
       height: auto
-      
+
+  .product-card:hover &
+    transform: scale(1.05)
 
     .product-card:hover &
       transform: scale(1.05)
