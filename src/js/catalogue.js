@@ -642,7 +642,7 @@ async function updateDisplay() {
 
   // Скролл к результатам (кроме первой загрузки)
   if (!isInitialLoad) {
-    const catalogueContent = document.querySelector(".catalogue__content");
+    const catalogueContent = document.querySelector("#products-grid");
     if (catalogueContent) {
       catalogueContent.scrollIntoView({
         behavior: "smooth",
