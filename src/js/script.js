@@ -1,3 +1,19 @@
+const PHONE_NUMBER = "+79127778234";
+const PHONE_DISPLAY = "+7 (912) 777 82 34";
+
+document.addEventListener("DOMContentLoaded", function () {
+  const phoneLinks = document.querySelectorAll(".ph-n");
+  
+  phoneLinks.forEach((link) => {
+    link.href = `tel:${PHONE_NUMBER}`;
+    
+   
+    if (!link.querySelector('*')) {
+      link.textContent = PHONE_DISPLAY;
+    }
+  });
+});
+
 // vin transform
 document.querySelectorAll(".vin-input").forEach((input) => {
   input.addEventListener("input", (e) => {
@@ -95,7 +111,7 @@ callTriggerPosition();
 // send messages
 function sendToMessenger(messenger, vin) {
   if (messenger === "tel") {
-    window.location.href = "tel:+79874453508";
+    window.location.href = `tel:${PHONE_NUMBER}`;
     return;
   }
   let message;

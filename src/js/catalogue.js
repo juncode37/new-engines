@@ -1,5 +1,20 @@
 let isInitialLoad = true;
 
+const PHONE_NUMBER = "+79127778234";
+const PHONE_DISPLAY = "+7 (912) 777 82 34";
+
+document.addEventListener("DOMContentLoaded", function () {
+  const phoneLinks = document.querySelectorAll(".ph-n");
+
+  phoneLinks.forEach((link) => {
+    link.href = `tel:${PHONE_NUMBER}`;
+
+    if (!link.querySelector("*")) {
+      link.textContent = PHONE_DISPLAY;
+    }
+  });
+});
+
 // vin transform
 document.querySelectorAll(".vin-input").forEach((input) => {
   input.addEventListener("input", (e) => {
@@ -62,7 +77,6 @@ if (modalElement) {
 
 // send messages
 document.addEventListener("DOMContentLoaded", () => {
-
   document.addEventListener("click", (e) => {
     if (e.target.closest(".product-card__btn-send")) {
       const modal = new bootstrap.Modal("#sendSms");
@@ -80,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function sendToMessenger(messenger, vin) {
   if (messenger === "tel") {
-    window.location.href = "tel:+79874453508";
+    window.location.href = `tel:${PHONE_NUMBER}`;
     return;
   }
   let message;
@@ -155,7 +169,9 @@ catalogueForms.forEach((catalogueForm) => {
     const BOT_TOKEN = "8504954718:AAHQFIt_EPJ8VkJtcOaiz6X988MTRls0k8Q";
     const CHAT_ID = "-1003339414257";
     const statusModal = new bootstrap.Modal("#status");
-    const modal = bootstrap.Modal.getInstance(document.getElementById("sendVin"));
+    const modal = bootstrap.Modal.getInstance(
+      document.getElementById("sendVin"),
+    );
     const statusText = document.querySelector(".status-modal__text");
     const callbackBtn = this.querySelector(".callback__btn");
 
@@ -220,7 +236,6 @@ catalogueForms.forEach((catalogueForm) => {
   });
 });
 
-
 // Call trigger button
 const callTrigger = document.querySelector(".call-trigger");
 
@@ -258,58 +273,146 @@ callTriggerPosition();
 
 // Call trigger end
 
+// Конфигурация API
+const API_BASE_URL = "https://api.xn--80aanidep0btkd2cfi.xn--p1ai/engines/";
+const itemsPerPage = 9; // Количество карточек на странице
 
-let allProducts = [];
-let filteredProducts = [];
 let currentPage = 1;
-const itemsPerPage = 9;
+let currentFilters = {};
+let totalItems = 0;
+let hasMorePages = true;
+let isLoading = false;
 
+// Функция для построения URL с параметрами
+function buildApiUrl(filters, page) {
+  const params = new URLSearchParams();
 
+  // Пагинация
+  params.append("limit", itemsPerPage);
+  params.append("offset", (page - 1) * itemsPerPage);
+
+  // Фильтры
+  if (filters.brand) params.append("make", filters.brand);
+  if (filters.model) params.append("model", filters.model);
+  if (filters.year) params.append("year", filters.year);
+  if (filters.engineType) params.append("engine_type", filters.engineType);
+  if (filters.priceFrom) params.append("price_min", filters.priceFrom);
+  if (filters.priceTo) params.append("price_max", filters.priceTo);
+
+  return `${API_BASE_URL}?${params.toString()}`;
+}
+
+// Загрузка данных с API
+async function fetchEngines(filters, page) {
+  if (isLoading) return null;
+
+  isLoading = true;
+
+  try {
+    const url = buildApiUrl(filters, page);
+    const response = await fetch(url, {
+      headers: {
+        accept: "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    // API возвращает массив напрямую
+    if (Array.isArray(data)) {
+      return {
+        products: data,
+        hasMore: data.length === itemsPerPage, // Если вернулось 9, значит есть ещё
+      };
+    }
+
+    // Если API возвращает объект с данными
+    const products = data.data || data.results || data;
+    return {
+      products: products,
+      hasMore: products.length === itemsPerPage,
+      total: data.total || data.count || null,
+    };
+  } catch (error) {
+    console.error("Ошибка загрузки данных:", error);
+    showErrorMessage("Ошибка загрузки данных. Попробуйте позже.");
+    return null;
+  } finally {
+    isLoading = false;
+    hideLoadingIndicator();
+  }
+}
+
+// Загрузка уникальных значений для фильтров
+async function fetchFilterOptions() {
+  try {
+    const response = await fetch(`${API_BASE_URL}?limit=200&offset=0`, {
+      headers: {
+        accept: "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const products = Array.isArray(data)
+      ? data
+      : data.data || data.results || [];
+
+    return products;
+  } catch (error) {
+    console.error("Ошибка загрузки опций фильтров:", error);
+    return [];
+  }
+}
 
 function getUniqueValues(array, key) {
   return [...new Set(array.map((item) => item[key]))].filter(Boolean).sort();
 }
 
-function getModelsByBrand(brand) {
+function getModelsByBrand(products, brand) {
   if (!brand) return [];
   return getUniqueValues(
-    allProducts.filter((p) => p.make === brand),
+    products.filter((p) => p.make === brand),
     "model",
   );
 }
 
-function parseYear(yearString) {
-  if (!yearString) return null;
-  const match = yearString.match(/\d{4}/);
-  return match ? parseInt(match[0]) : null;
-}
+async function populateFilters() {
+  const products = await fetchFilterOptions();
 
-
-
-function populateFilters() {
-  const brands = getUniqueValues(allProducts, "make");
+  const brands = getUniqueValues(products, "make");
   const brandSelect = document.getElementById("brand-filter");
   brandSelect.innerHTML = '<option value="">Все марки</option>';
   brands.forEach((brand) => {
     brandSelect.innerHTML += `<option value="${brand}">${brand}</option>`;
   });
 
-  const engineTypes = getUniqueValues(allProducts, "engine_type").filter(
-    (type) => type !== "unknown",
+  const engineTypes = getUniqueValues(products, "engine_type").filter(
+    (type) => type !== "unknown" && type !== "",
   );
   const engineTypeSelect = document.getElementById("engine-type-filter");
   engineTypeSelect.innerHTML = '<option value="">Все типы</option>';
   engineTypes.forEach((type) => {
     engineTypeSelect.innerHTML += `<option value="${type}">${type}</option>`;
   });
+
+  // Сохраняем продукты для обновления моделей
+  window.cachedProducts = products;
 }
 
 function updateModelOptions(selectedBrand) {
   const modelSelect = document.getElementById("model-filter");
   modelSelect.innerHTML = '<option value="">Все модели</option>';
 
-  if (selectedBrand) {
-    const models = getModelsByBrand(selectedBrand);
+  if (selectedBrand && window.cachedProducts) {
+    const models = getModelsByBrand(window.cachedProducts, selectedBrand);
     models.forEach((model) => {
       modelSelect.innerHTML += `<option value="${model}">${model}</option>`;
     });
@@ -319,90 +422,22 @@ function updateModelOptions(selectedBrand) {
   }
 }
 
-
-
-function applyFilters(formData) {
-  filteredProducts = allProducts.filter((product) => {
-    if (formData.brand && product.make !== formData.brand) {
-      return false;
-    }
-
-    if (formData.model && product.model !== formData.model) {
-      return false;
-    }
-
-    if (formData.year) {
-      const productYear = parseYear(product.year);
-      if (productYear !== parseInt(formData.year)) {
-        return false;
-      }
-    }
-
-    if (formData.engineType && product.engine_type !== formData.engineType) {
-      return false;
-    }
-
-    if (formData.priceFrom && product.price < parseInt(formData.priceFrom)) {
-      return false;
-    }
-
-    if (formData.priceTo && product.price > parseInt(formData.priceTo)) {
-      return false;
-    }
-
-    return true;
-  });
-
+async function applyFilters(formData) {
+  currentFilters = formData;
   currentPage = 1;
-  updateDisplay();
-}
-
-
-function sortProducts(sortType) {
-  switch (sortType) {
-    case "price-asc":
-      filteredProducts.sort((a, b) => a.price - b.price);
-      break;
-    case "price-desc":
-      filteredProducts.sort((a, b) => b.price - a.price);
-      break;
-    case "year-desc":
-      filteredProducts.sort((a, b) => {
-        const yearA = parseYear(a.year) || 0;
-        const yearB = parseYear(b.year) || 0;
-        return yearB - yearA;
-      });
-      break;
-    case "year-asc":
-      filteredProducts.sort((a, b) => {
-        const yearA = parseYear(a.year) || 0;
-        const yearB = parseYear(b.year) || 0;
-        return yearA - yearB;
-      });
-      break;
-    default:
-      applyFilters(getCurrentFormData());
-      return;
-  }
-  updateDisplay();
-}
-
-
-function getPaginatedProducts() {
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  return filteredProducts.slice(startIndex, endIndex);
+  totalItems = 0; // Сбрасываем чтобы пересчитать с новыми фильтрами
+  await updateDisplay();
 }
 
 function getTotalPages() {
-  return Math.ceil(filteredProducts.length / itemsPerPage);
+  return Math.ceil(totalItems / itemsPerPage);
 }
 
 function renderPagination() {
   const totalPages = getTotalPages();
   const paginationContainer = document.querySelector(".pagination");
 
-  if (totalPages <= 1) {
+  if (totalPages <= 1 && !hasMorePages) {
     paginationContainer.innerHTML = "";
     return;
   }
@@ -416,8 +451,9 @@ function renderPagination() {
   `;
 
   let startPage = Math.max(1, currentPage - 2);
-  let endPage = Math.min(totalPages, currentPage + 2);
+  let endPage = hasMorePages ? currentPage + 2 : totalPages;
 
+  // Показываем первую страницу
   if (startPage > 1) {
     paginationHTML += `
       <li class="page-item">
@@ -429,7 +465,8 @@ function renderPagination() {
     }
   }
 
-  for (let i = startPage; i <= endPage; i++) {
+  // Показываем страницы вокруг текущей
+  for (let i = startPage; i <= Math.min(endPage, totalPages); i++) {
     paginationHTML += `
       <li class="page-item ${i === currentPage ? "active" : ""}">
         <a class="page-link" href="#" data-page="${i}">${i}</a>
@@ -437,19 +474,15 @@ function renderPagination() {
     `;
   }
 
-  if (endPage < totalPages) {
-    if (endPage < totalPages - 1) {
-      paginationHTML += `<li class="page-item disabled"><span class="page-link">...</span></li>`;
-    }
-    paginationHTML += `
-      <li class="page-item">
-        <a class="page-link" href="#" data-page="${totalPages}">${totalPages}</a>
-      </li>
-    `;
+  // Если есть ещё страницы - показываем многоточие и следующую кнопку
+  if (hasMorePages && currentPage < totalPages) {
+    paginationHTML += `<li class="page-item disabled"><span class="page-link">...</span></li>`;
   }
 
+  // Кнопка "Следующая"
+  const isLastPage = !hasMorePages && currentPage === totalPages;
   paginationHTML += `
-    <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
+    <li class="page-item ${isLastPage ? "disabled" : ""}">
       <a class="page-link" href="#" data-page="${currentPage + 1}">Следующая</a>
     </li>
   `;
@@ -471,7 +504,9 @@ function renderProductCard(product) {
     stock_text,
   } = product;
 
-  const formattedPrice = price ? price.toLocaleString("ru-RU") : "Цена не указана";
+  const formattedPrice = price
+    ? price.toLocaleString("ru-RU")
+    : "Цена не указана";
   const inStock = stock_text !== "Продано";
   const badgeClass = inStock
     ? "product-card__badge"
@@ -550,14 +585,43 @@ function handleImageLoading() {
   });
 }
 
-function updateDisplay() {
-  document.querySelector(".catalogue__results strong").textContent =
-    filteredProducts.length;
+async function updateDisplay() {
+  showLoadingIndicator();
+  const result = await fetchEngines(currentFilters, currentPage);
+
+  if (!result) {
+    return;
+  }
+
+  const { products, hasMore, total } = result;
+
+  // Если API вернул total - используем его
+  if (total !== null && total !== undefined) {
+    totalItems = total;
+  } else {
+    // Иначе считаем приблизительно
+    if (hasMore) {
+      totalItems = currentPage * itemsPerPage + 1; // Минимум ещё одна страница есть
+    } else {
+      totalItems = (currentPage - 1) * itemsPerPage + products.length;
+    }
+  }
+
+  hasMorePages = hasMore;
+
+  // Обновляем счетчик результатов
+  // const resultsElement = document.querySelector(".catalogue__results strong");
+  // if (resultsElement) {
+  //   if (total !== null && total !== undefined) {
+  //     resultsElement.textContent = total;
+  //   } else {
+  //     resultsElement.textContent = hasMorePages ? `${totalItems}+` : totalItems;
+  //   }
+  // }
 
   const productsGrid = document.getElementById("products-grid");
-  const paginatedProducts = getPaginatedProducts();
 
-  if (paginatedProducts.length === 0) {
+  if (products.length === 0) {
     productsGrid.innerHTML = `
       <div class="col-12">
         <div class="alert alert-info text-center">
@@ -567,7 +631,7 @@ function updateDisplay() {
       </div>
     `;
   } else {
-    productsGrid.innerHTML = paginatedProducts
+    productsGrid.innerHTML = products
       .map((product) => renderProductCard(product))
       .join("");
 
@@ -576,15 +640,17 @@ function updateDisplay() {
 
   renderPagination();
 
-
+  // Скролл к результатам (кроме первой загрузки)
   if (!isInitialLoad) {
-    document.querySelector(".catalogue__content").scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    const catalogueContent = document.querySelector(".catalogue__content");
+    if (catalogueContent) {
+      catalogueContent.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   }
 }
-
 
 function getCurrentFormData() {
   return {
@@ -612,46 +678,319 @@ function setupEventListeners() {
   document.getElementById("filters-form").addEventListener("reset", () => {
     setTimeout(() => {
       document.getElementById("model-filter").disabled = true;
-      filteredProducts = [...allProducts];
+      currentFilters = {};
       currentPage = 1;
       updateDisplay();
     }, 0);
   });
 
   document.getElementById("sort-select").addEventListener("change", (e) => {
-    sortProducts(e.target.value);
+    // Сортировка - можно добавить если API поддерживает
+    console.log("Сортировка:", e.target.value);
+    // TODO: Добавить параметр sort в buildApiUrl если нужно
   });
 
-  document.querySelector(".pagination").addEventListener("click", (e) => {
+  document.querySelector(".pagination").addEventListener("click", async (e) => {
     e.preventDefault();
     if (e.target.tagName === "A" && !e.target.closest(".disabled")) {
       const page = parseInt(e.target.dataset.page);
-      if (page && page !== currentPage && page > 0 && page <= getTotalPages()) {
+      if (page && page !== currentPage && page > 0) {
         currentPage = page;
-        updateDisplay();
+        await updateDisplay();
       }
     }
   });
 }
 
-function shuffleArray(array) {
-  const shuffled = [...array];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+function showLoadingIndicator() {
+  const productsGrid = document.getElementById("products-grid");
+  if (productsGrid) {
+    productsGrid.innerHTML = `
+      <div class="col-12 text-center py-5">
+         <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    style="
+                      margin: auto;
+                      background: none;
+                      display: block;
+                      shape-rendering: auto;
+                    "
+                    width="100px"
+                    height="100px"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="xMidYMid"
+                  >
+                    <g transform="rotate(0 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.9166666666666666s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(30 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.8333333333333334s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(60 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.75s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(90 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.6666666666666666s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(120 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.5833333333333334s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(150 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.5s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(180 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.4166666666666667s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(210 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.3333333333333333s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(240 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.25s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(270 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.16666666666666666s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(300 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="-0.08333333333333333s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                    <g transform="rotate(330 50 50)">
+                      <rect
+                        x="47"
+                        y="24"
+                        rx="3"
+                        ry="6"
+                        width="6"
+                        height="12"
+                        fill="#FF6B35"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="1;0"
+                          keyTimes="0;1"
+                          dur="1s"
+                          begin="0s"
+                          repeatCount="indefinite"
+                        ></animate>
+                      </rect>
+                    </g>
+                  </svg>
+        <p class="mt-3">Загрузка данных...</p>
+      </div>
+    `;
   }
-  return shuffled;
 }
 
+function hideLoadingIndicator() {
+  // Индикатор скрывается автоматически при рендере результатов
+}
 
-document.addEventListener("DOMContentLoaded", () => {
-  allProducts = shuffleArray(enginesData || []);
-  filteredProducts = [...allProducts];
+function showErrorMessage(message) {
+  const productsGrid = document.getElementById("products-grid");
+  if (productsGrid) {
+    productsGrid.innerHTML = `
+      <div class="col-12">
+        <div class="alert alert-danger text-center">
+          <h4>Ошибка</h4>
+          <p>${message}</p>
+        </div>
+      </div>
+    `;
+  }
+}
 
-  populateFilters();
-  updateDisplay();
+// Инициализация при загрузке страницы
+document.addEventListener("DOMContentLoaded", async () => {
+  await populateFilters();
+  await updateDisplay();
   setupEventListeners();
-
 
   setTimeout(() => {
     isInitialLoad = false;
