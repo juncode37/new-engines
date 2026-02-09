@@ -1,7 +1,10 @@
 let isInitialLoad = true;
 
-const PHONE_NUMBER = "+79127778234";
-const PHONE_DISPLAY = "+7 (912) 777 82 34";
+const formatPhone = (phone) =>
+  phone.replace(/^(\+7)(\d{3})(\d{3})(\d{2})(\d{2})$/, "$1 ($2) $3 $4 $5");
+
+const PHONE_NUMBER = "+79277673866";
+const PHONE_DISPLAY = formatPhone(PHONE_NUMBER);
 
 document.addEventListener("DOMContentLoaded", function () {
   const phoneLinks = document.querySelectorAll(".ph-n");
@@ -110,17 +113,15 @@ function sendToMessenger(messenger, vin) {
   let url = "";
 
   switch (messenger) {
-    case "whatsapp":
-      url = `https://wa.me/79175597347?text=${encodedMessage}`;
-      break;
+   
 
     case "telegram":
-      url = `https://t.me/dVigateliKotrakt?text=${encodedMessage}`;
+      url = `https://t.me/Zapchastikach?text=${encodedMessage}`;
       break;
 
     case "max":
       navigator.clipboard.writeText(message);
-      url = `https://max.ru/u/f9LHodD0cOK64KKaIMgoZ2WScD1cDnfsO8qwQjdT0HAEaYNPW2r9pdKkCv8`;
+      url = `https://max.ru/u/f9LHodD0cOIP0KhWuXiQAMzyqxXPqM-qYCefys2HKX9VUfK8mn7BxCG69xU`;
       break;
   }
 
@@ -166,8 +167,8 @@ catalogueForms.forEach((catalogueForm) => {
 
     this.classList.add("was-validated");
 
-    const BOT_TOKEN = "8504954718:AAHQFIt_EPJ8VkJtcOaiz6X988MTRls0k8Q";
-    const CHAT_ID = "-1003339414257";
+    const BOT_TOKEN = "8587190797:AAG4Heb0rwqBhlFj6EFrQ5VJOtq8WemUQS0";
+    const CHAT_ID = "-1003766386896";
     const statusModal = new bootstrap.Modal("#status");
     const modal = bootstrap.Modal.getInstance(
       document.getElementById("sendVin"),
@@ -273,9 +274,9 @@ callTriggerPosition();
 
 // Call trigger end
 
-// Конфигурация API
 const API_BASE_URL = "https://api.xn--80aanidep0btkd2cfi.xn--p1ai/engines/";
-const itemsPerPage = 9; // Количество карточек на странице
+const FILTERS_BASE_URL = "https://api.xn--80aanidep0btkd2cfi.xn--p1ai/filters/";
+const itemsPerPage = 9;
 
 let currentPage = 1;
 let currentFilters = {};
@@ -283,15 +284,12 @@ let totalItems = 0;
 let hasMorePages = true;
 let isLoading = false;
 
-// Функция для построения URL с параметрами
 function buildApiUrl(filters, page) {
   const params = new URLSearchParams();
 
-  // Пагинация
   params.append("limit", itemsPerPage);
   params.append("offset", (page - 1) * itemsPerPage);
 
-  // Фильтры
   if (filters.brand) params.append("make", filters.brand);
   if (filters.model) params.append("model", filters.model);
   if (filters.year) params.append("year", filters.year);
@@ -302,7 +300,6 @@ function buildApiUrl(filters, page) {
   return `${API_BASE_URL}?${params.toString()}`;
 }
 
-// Загрузка данных с API
 async function fetchEngines(filters, page) {
   if (isLoading) return null;
 
@@ -322,15 +319,13 @@ async function fetchEngines(filters, page) {
 
     const data = await response.json();
 
-    // API возвращает массив напрямую
     if (Array.isArray(data)) {
       return {
         products: data,
-        hasMore: data.length === itemsPerPage, // Если вернулось 9, значит есть ещё
+        hasMore: data.length === itemsPerPage,
       };
     }
 
-    // Если API возвращает объект с данными
     const products = data.data || data.results || data;
     return {
       products: products,
@@ -343,14 +338,12 @@ async function fetchEngines(filters, page) {
     return null;
   } finally {
     isLoading = false;
-    hideLoadingIndicator();
   }
 }
 
-// Загрузка уникальных значений для фильтров
-async function fetchFilterOptions() {
+async function fetchMakes() {
   try {
-    const response = await fetch(`${API_BASE_URL}?limit=200&offset=0`, {
+    const response = await fetch(`${FILTERS_BASE_URL}makes`, {
       headers: {
         accept: "application/json",
       },
@@ -361,60 +354,68 @@ async function fetchFilterOptions() {
     }
 
     const data = await response.json();
-    const products = Array.isArray(data)
-      ? data
-      : data.data || data.results || [];
-
-    return products;
+    return Array.isArray(data) ? data : data.makes || data.data || [];
   } catch (error) {
-    console.error("Ошибка загрузки опций фильтров:", error);
+    console.error("Ошибка загрузки марок:", error);
     return [];
   }
 }
 
-function getUniqueValues(array, key) {
-  return [...new Set(array.map((item) => item[key]))].filter(Boolean).sort();
-}
+async function fetchModels(make) {
+  try {
+    const url = make
+      ? `${FILTERS_BASE_URL}models?make=${encodeURIComponent(make)}`
+      : `${FILTERS_BASE_URL}models`;
 
-function getModelsByBrand(products, brand) {
-  if (!brand) return [];
-  return getUniqueValues(
-    products.filter((p) => p.make === brand),
-    "model",
-  );
+    const response = await fetch(url, {
+      headers: {
+        accept: "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return Array.isArray(data) ? data : data.models || data.data || [];
+  } catch (error) {
+    console.error("Ошибка загрузки моделей:", error);
+    return [];
+  }
 }
 
 async function populateFilters() {
-  const products = await fetchFilterOptions();
-
-  const brands = getUniqueValues(products, "make");
+  const makes = await fetchMakes();
   const brandSelect = document.getElementById("brand-filter");
+
+  if (!brandSelect) return;
+
   brandSelect.innerHTML = '<option value="">Все марки</option>';
-  brands.forEach((brand) => {
-    brandSelect.innerHTML += `<option value="${brand}">${brand}</option>`;
+  makes.forEach((make) => {
+    const makeName = typeof make === "string" ? make : make.name || make.make;
+    brandSelect.innerHTML += `<option value="${makeName}">${makeName}</option>`;
   });
 
-  const engineTypes = getUniqueValues(products, "engine_type").filter(
-    (type) => type !== "unknown" && type !== "",
-  );
   const engineTypeSelect = document.getElementById("engine-type-filter");
-  engineTypeSelect.innerHTML = '<option value="">Все типы</option>';
-  engineTypes.forEach((type) => {
-    engineTypeSelect.innerHTML += `<option value="${type}">${type}</option>`;
-  });
-
-  // Сохраняем продукты для обновления моделей
-  window.cachedProducts = products;
+  if (engineTypeSelect) {
+    engineTypeSelect.innerHTML = '<option value="">Все типы</option>';
+  }
 }
 
-function updateModelOptions(selectedBrand) {
+async function updateModelOptions(selectedBrand) {
   const modelSelect = document.getElementById("model-filter");
+
+  if (!modelSelect) return;
+
   modelSelect.innerHTML = '<option value="">Все модели</option>';
 
-  if (selectedBrand && window.cachedProducts) {
-    const models = getModelsByBrand(window.cachedProducts, selectedBrand);
+  if (selectedBrand) {
+    const models = await fetchModels(selectedBrand);
     models.forEach((model) => {
-      modelSelect.innerHTML += `<option value="${model}">${model}</option>`;
+      const modelName =
+        typeof model === "string" ? model : model.name || model.model;
+      modelSelect.innerHTML += `<option value="${modelName}">${modelName}</option>`;
     });
     modelSelect.disabled = false;
   } else {
@@ -425,7 +426,7 @@ function updateModelOptions(selectedBrand) {
 async function applyFilters(formData) {
   currentFilters = formData;
   currentPage = 1;
-  totalItems = 0; // Сбрасываем чтобы пересчитать с новыми фильтрами
+  totalItems = 0;
   await updateDisplay();
 }
 
@@ -437,6 +438,8 @@ function renderPagination() {
   const totalPages = getTotalPages();
   const paginationContainer = document.querySelector(".pagination");
 
+  if (!paginationContainer) return;
+
   if (totalPages <= 1 && !hasMorePages) {
     paginationContainer.innerHTML = "";
     return;
@@ -446,18 +449,17 @@ function renderPagination() {
 
   paginationHTML += `
     <li class="page-item ${currentPage === 1 ? "disabled" : ""}">
-      <a class="page-link" href="#" data-page="${currentPage - 1}">Предыдущая</a>
+      <a class="page-link" href="javascript:void(0)" data-page="${currentPage - 1}">Предыдущая</a>
     </li>
   `;
 
   let startPage = Math.max(1, currentPage - 2);
   let endPage = hasMorePages ? currentPage + 2 : totalPages;
 
-  // Показываем первую страницу
   if (startPage > 1) {
     paginationHTML += `
       <li class="page-item">
-        <a class="page-link" href="#" data-page="1">1</a>
+        <a class="page-link" href="javascript:void(0)" data-page="1">1</a>
       </li>
     `;
     if (startPage > 2) {
@@ -465,25 +467,22 @@ function renderPagination() {
     }
   }
 
-  // Показываем страницы вокруг текущей
   for (let i = startPage; i <= Math.min(endPage, totalPages); i++) {
     paginationHTML += `
       <li class="page-item ${i === currentPage ? "active" : ""}">
-        <a class="page-link" href="#" data-page="${i}">${i}</a>
+        <a class="page-link" href="javascript:void(0)" data-page="${i}">${i}</a>
       </li>
     `;
   }
 
-  // Если есть ещё страницы - показываем многоточие и следующую кнопку
   if (hasMorePages && currentPage < totalPages) {
     paginationHTML += `<li class="page-item disabled"><span class="page-link">...</span></li>`;
   }
 
-  // Кнопка "Следующая"
   const isLastPage = !hasMorePages && currentPage === totalPages;
   paginationHTML += `
     <li class="page-item ${isLastPage ? "disabled" : ""}">
-      <a class="page-link" href="#" data-page="${currentPage + 1}">Следующая</a>
+      <a class="page-link" href="javascript:void(0)" data-page="${currentPage + 1}">Следующая</a>
     </li>
   `;
 
@@ -586,7 +585,20 @@ function handleImageLoading() {
 }
 
 async function updateDisplay() {
+  if (!isInitialLoad) {
+    const catalogueContent = document.querySelector("#catalogue");
+    if (catalogueContent) {
+      catalogueContent.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+
+    await new Promise((resolve) => setTimeout(resolve, 500));
+  }
+
   showLoadingIndicator();
+
   const result = await fetchEngines(currentFilters, currentPage);
 
   if (!result) {
@@ -595,13 +607,11 @@ async function updateDisplay() {
 
   const { products, hasMore, total } = result;
 
-  // Если API вернул total - используем его
   if (total !== null && total !== undefined) {
     totalItems = total;
   } else {
-    // Иначе считаем приблизительно
     if (hasMore) {
-      totalItems = currentPage * itemsPerPage + 1; // Минимум ещё одна страница есть
+      totalItems = currentPage * itemsPerPage + 1;
     } else {
       totalItems = (currentPage - 1) * itemsPerPage + products.length;
     }
@@ -609,17 +619,9 @@ async function updateDisplay() {
 
   hasMorePages = hasMore;
 
-  // Обновляем счетчик результатов
-  // const resultsElement = document.querySelector(".catalogue__results strong");
-  // if (resultsElement) {
-  //   if (total !== null && total !== undefined) {
-  //     resultsElement.textContent = total;
-  //   } else {
-  //     resultsElement.textContent = hasMorePages ? `${totalItems}+` : totalItems;
-  //   }
-  // }
-
   const productsGrid = document.getElementById("products-grid");
+
+  if (!productsGrid) return;
 
   if (products.length === 0) {
     productsGrid.innerHTML = `
@@ -639,67 +641,83 @@ async function updateDisplay() {
   }
 
   renderPagination();
-
-  // Скролл к результатам (кроме первой загрузки)
-  if (!isInitialLoad) {
-    const catalogueContent = document.querySelector("#products-grid");
-    if (catalogueContent) {
-      catalogueContent.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  }
 }
 
 function getCurrentFormData() {
+  const brandFilter = document.getElementById("brand-filter");
+  const modelFilter = document.getElementById("model-filter");
+  const yearFilter = document.getElementById("year-filter");
+  const engineTypeFilter = document.getElementById("engine-type-filter");
+  const priceFrom = document.getElementById("price-from");
+  const priceTo = document.getElementById("price-to");
+
   return {
-    brand: document.getElementById("brand-filter").value,
-    model: document.getElementById("model-filter").value,
-    year: document.getElementById("year-filter").value,
-    engineType: document.getElementById("engine-type-filter").value,
-    priceFrom: document.getElementById("price-from").value,
-    priceTo: document.getElementById("price-to").value,
+    brand: brandFilter ? brandFilter.value : "",
+    model: modelFilter ? modelFilter.value : "",
+    year: yearFilter ? yearFilter.value : "",
+    engineType: engineTypeFilter ? engineTypeFilter.value : "",
+    priceFrom: priceFrom ? priceFrom.value : "",
+    priceTo: priceTo ? priceTo.value : "",
   };
 }
 
 function setupEventListeners() {
-  document.getElementById("brand-filter").addEventListener("change", (e) => {
-    updateModelOptions(e.target.value);
-    document.getElementById("model-filter").value = "";
-  });
+  const brandFilter = document.getElementById("brand-filter");
+  const filtersForm = document.getElementById("filters-form");
+  const sortSelect = document.getElementById("sort-select");
+  const pagination = document.querySelector(".pagination");
 
-  document.getElementById("filters-form").addEventListener("submit", (e) => {
-    e.preventDefault();
-    const formData = getCurrentFormData();
-    applyFilters(formData);
-  });
-
-  document.getElementById("filters-form").addEventListener("reset", () => {
-    setTimeout(() => {
-      document.getElementById("model-filter").disabled = true;
-      currentFilters = {};
-      currentPage = 1;
-      updateDisplay();
-    }, 0);
-  });
-
-  document.getElementById("sort-select").addEventListener("change", (e) => {
-    // Сортировка - можно добавить если API поддерживает
-    console.log("Сортировка:", e.target.value);
-    // TODO: Добавить параметр sort в buildApiUrl если нужно
-  });
-
-  document.querySelector(".pagination").addEventListener("click", async (e) => {
-    e.preventDefault();
-    if (e.target.tagName === "A" && !e.target.closest(".disabled")) {
-      const page = parseInt(e.target.dataset.page);
-      if (page && page !== currentPage && page > 0) {
-        currentPage = page;
-        await updateDisplay();
+  if (brandFilter) {
+    brandFilter.addEventListener("change", async (e) => {
+      await updateModelOptions(e.target.value);
+      const modelFilter = document.getElementById("model-filter");
+      if (modelFilter) {
+        modelFilter.value = "";
       }
-    }
-  });
+    });
+  }
+
+  if (filtersForm) {
+    filtersForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const formData = getCurrentFormData();
+      applyFilters(formData);
+    });
+
+    filtersForm.addEventListener("reset", () => {
+      setTimeout(() => {
+        const modelFilter = document.getElementById("model-filter");
+        if (modelFilter) {
+          modelFilter.disabled = true;
+        }
+        currentFilters = {};
+        currentPage = 1;
+        updateDisplay();
+      }, 0);
+    });
+  }
+
+  if (sortSelect) {
+    sortSelect.addEventListener("change", (e) => {
+      console.log("Сортировка:", e.target.value);
+    });
+  }
+
+  if (pagination) {
+    pagination.addEventListener("click", async (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const target = e.target.closest(".page-link");
+      if (target && !target.closest(".disabled")) {
+        const page = parseInt(target.dataset.page);
+        if (page && page !== currentPage && page > 0) {
+          currentPage = page;
+          await updateDisplay();
+        }
+      }
+    });
+  }
 }
 
 function showLoadingIndicator() {
@@ -968,10 +986,6 @@ function showLoadingIndicator() {
   }
 }
 
-function hideLoadingIndicator() {
-  // Индикатор скрывается автоматически при рендере результатов
-}
-
 function showErrorMessage(message) {
   const productsGrid = document.getElementById("products-grid");
   if (productsGrid) {
@@ -986,8 +1000,10 @@ function showErrorMessage(message) {
   }
 }
 
-// Инициализация при загрузке страницы
 document.addEventListener("DOMContentLoaded", async () => {
+  const catalogueElement = document.getElementById("catalogue");
+  if (!catalogueElement) return;
+
   await populateFilters();
   await updateDisplay();
   setupEventListeners();

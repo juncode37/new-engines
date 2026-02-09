@@ -65,7 +65,7 @@
   margin-bottom: 200px
 
   &__sidebar
-    background-color: $tertiary-color
+    background-color: $primary-color
     height: fit-content
     position: sticky
 
@@ -288,8 +288,16 @@
   .page-item.active .page-link
     background-color: $accent-color
     border-color: $accent-color
+.pagination-text
+  max-width: 150px
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+  display: inline-block
 
-// Адаптивность
+  @media (max-width: 400px)
+    max-width: 90px
+
 @media (max-width: 768px)
   .catalogue__header
     flex-direction: column

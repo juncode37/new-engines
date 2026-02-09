@@ -16,7 +16,12 @@
       
   nav
     background: $primary-color
-    border-bottom: 1px solid $accent-color
+
+  nav.b-btm
+      border-bottom: 5px solid $accent-color
+
+  .navbar-toggler:focus
+        box-shadow: none
 
   &__link--active
     font-weight: bold
@@ -26,9 +31,11 @@
       color: $secondary-color
 
   &__logo
-    width: 50px
+    width: 80px
+    @media (max-width: 992px)
+      width: 70px
     @media (max-width: 500px)
-      width: 40px
+      width: 50px
 
   span
     font-family: $family-base
@@ -49,9 +56,8 @@
 
   &__btn
     // font-size: calc(0.8em + 0.5vw)
-    width: 40px
-    height: 40px
-    border: 1px solid $accent-color
+    width: 50px
+    height: 50px
     transition: .3s
     
     cursor: pointer
@@ -77,5 +83,7 @@
     button
       background: none
       border: none
+    
+
 
     
